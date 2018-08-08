@@ -5,5 +5,10 @@
   "main": "index.js",
   "repository": "git@github.com:JonnyPickard/JonnyPickard.github.io.git",
   "author": "Jonny Pickard <jonathandpickard@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "component-library",
+    "app"
+  ]
 }
