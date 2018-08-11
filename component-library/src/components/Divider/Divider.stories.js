@@ -22,7 +22,7 @@ storiesOf('Divider', module)
       theme: dividerThemeDefault,
       axis: select('axis', ['vertical', 'horizontal'], 'horizontal'),
       dividerSize: select('Divider Size', ['xs', 'sm', 'md'], 'xs'),
-      dividerColor: select('Color', colors, 'grayscaleColor1')
+      dividerColor: select('Color', colors, 'grayscaleColor5')
     };
 
     return (

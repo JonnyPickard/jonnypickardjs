@@ -22,7 +22,7 @@ storiesOf('Icon', module)
   .addDecorator(centered)
   .addDecorator(withKnobs)
   .add('default', () => {
-    const color = select('Color', colors, 'grayscaleColor1', 'Icon-01');
+    const color = select('Color', colors, 'grayscaleColor5', 'Icon-01');
     const iconName = select(
       'Icon name',
       iconOptions,
