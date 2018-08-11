@@ -4,6 +4,9 @@
 [include]
 .*/src/.*
 
+[libs]
+../
+
 [options]
 module.name_mapper='^@jonnypickardjs/\1' -> '<PROJECT_ROOT>/src/components'
 module.name_mapper='.*\.(scss|svg)$' -> '<PROJECT_ROOT>/config/flow/NotJSModuleStub.js'
