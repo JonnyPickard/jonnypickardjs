@@ -6,6 +6,13 @@
   }
 }
 
+@mixin setIconSize($icon-size) {
+  > svg {
+    width: $icon-size;
+    height: $icon-size;
+  }
+}
+
 .icon {
   &,
   > svg {
@@ -41,5 +48,23 @@
   // Custom
   &linkedinBlue {
     @include svgFill($linkedin-blue);
+  }
+
+  &size {
+    &xs {
+      @include setIconSize($icon-size-xs)
+    }
+    &sm {
+      @include setIconSize($icon-size-sm)
+    }
+    &md {
+      @include setIconSize($icon-size-md)
+    }
+    &lg {
+      @include setIconSize($icon-size-lg)
+    }
+    &xlg {
+      @include setIconSize($icon-size-xlg)
+    }
   }
 }

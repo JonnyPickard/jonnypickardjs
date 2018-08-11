@@ -14,7 +14,8 @@ type Props = {
   iconName: string,
   /** Enum types that map to the css color class selectors */
   color: colorClassSelectors,
-  extendStyle?: Array<*> | string
+  extendStyle?: Array<*> | string,
+  iconSize: 'xs' | 'sm' | 'md' | 'lg' | 'xlg'
 };
 
 /**
@@ -24,13 +25,20 @@ type Props = {
  */
 class Icon extends PureComponent<Props> {
   static defaultProps = {
-    color: 'black'
+    color: 'black',
+    iconSize: 'md'
   };
 
   getClassSelectorForColor = (): string => {
     const { color, theme } = this.props;
 
     return theme[`icon${color}`];
+  };
+
+  getClassSelectorForSize = (): string => {
+    const { iconSize, theme } = this.props;
+
+    return theme[`iconsize${iconSize}`];
   };
 
   render() {
@@ -40,6 +48,7 @@ class Icon extends PureComponent<Props> {
         className={classNames(
           theme.icon,
           this.getClassSelectorForColor(),
+          this.getClassSelectorForSize(),
           extendStyle
         )}
       >

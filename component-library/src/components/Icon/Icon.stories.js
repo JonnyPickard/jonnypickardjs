@@ -24,6 +24,8 @@ const colors = [
   'linkedinBlue'
 ];
 
+const sizes = ['xs', 'sm', 'md', 'lg', 'xlg'];
+
 storiesOf('Icon', module)
   .addDecorator(withKnobs)
   .add('default', () => {
@@ -34,5 +36,13 @@ storiesOf('Icon', module)
       `${icons}#${iconNames[0]}`,
       'Icon-01'
     );
-    return <Icon color={color} iconName={iconName} theme={iconThemeDefault} />;
+    const iconSize = select('Icon size', sizes, 'md', 'Icon-01');
+    return (
+      <Icon
+        color={color}
+        iconName={iconName}
+        iconSize={iconSize}
+        theme={iconThemeDefault}
+      />
+    );
   });
