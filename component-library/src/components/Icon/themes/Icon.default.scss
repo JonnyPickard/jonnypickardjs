@@ -1,6 +1,6 @@
 @import 'src/style/variables.scss';
 
-@mixin svgFill($iconColor) {
+@mixin pickColor($iconColor) {
   > svg {
     fill: $iconColor;
   }
@@ -20,37 +20,7 @@
     width: 30px;
   }
 
-  // Grayscale
-  &grayscaleColor1 {
-    @include svgFill($grayscale-palette-1);
-  }
-  &grayscaleColor2 {
-    @include svgFill($grayscale-palette-2);
-  }
-  &grayscaleColor3 {
-    @include svgFill($grayscale-palette-3);
-  }
-  &grayscaleColor4 {
-    @include svgFill($grayscale-palette-4);
-  }
-  &grayscaleColor5 {
-    @include svgFill($grayscale-palette-5);
-  }
-
-  // B / W
-  &black {
-    @include svgFill($black);
-  }
-  &white {
-    @include svgFill($white);
-  }
-
-  // Custom
-  &linkedinBlue {
-    @include svgFill($linkedin-blue);
-  }
-
-  &size {
+  &sizes {
     &xs {
       @include setIconSize($icon-size-xs)
     }
@@ -66,5 +36,8 @@
     &xlg {
       @include setIconSize($icon-size-xlg)
     }
+  }
+  &colors {
+    @import 'src/style/colors/_pickColor.scss';
   }
 }

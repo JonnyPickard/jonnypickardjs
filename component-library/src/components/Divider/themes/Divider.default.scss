@@ -32,34 +32,6 @@
     }
   }
   &colors {
-    // Grayscale
-    &grayscaleColor1 {
-      @include pickColor($grayscale-palette-1);
-    }
-    &grayscaleColor2 {
-      @include pickColor($grayscale-palette-2);
-    }
-    &grayscaleColor3 {
-      @include pickColor($grayscale-palette-3);
-    }
-    &grayscaleColor4 {
-      @include pickColor($grayscale-palette-4);
-    }
-    &grayscaleColor5 {
-      @include pickColor($grayscale-palette-5);
-    }
-
-    // B / W
-    &black {
-      @include pickColor($black);
-    }
-    &white {
-      @include pickColor($white);
-    }
-
-    // Custom
-    &linkedinBlue {
-      @include pickColor($linkedin-blue);
-    }
+    @import 'src/style/colors/_pickColor.scss';
   }
 }

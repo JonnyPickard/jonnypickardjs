@@ -32,13 +32,13 @@ class Icon extends PureComponent<Props> {
   getClassSelectorForColor = (): string => {
     const { color, theme } = this.props;
 
-    return theme[`icon${color}`];
+    return theme[`iconcolors${color}`];
   };
 
   getClassSelectorForSize = (): string => {
     const { iconSize, theme } = this.props;
 
-    return theme[`iconsize${iconSize}`];
+    return theme[`iconsizes${iconSize}`];
   };
 
   render() {
