@@ -40,3 +40,51 @@ Portfolio Website
 <p align="center">
   <img src="./docs/wireframes/example-projects-detail-view.png" alt="Example project detail view">
 </p>
+
+
+## Roadmap
+
+### Required Components - *MVP
+
+#### Component Library
+
+:x: - Card (o)  
+:x: - Image (a)  
+:x: - ProfilePhoto (m)  
+:x: - Header / Nav (o)  
+:x: - Heading (a)  
+&nbsp;&nbsp;&nbsp;&nbsp;**types**:  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [h1 - h6]  
+:x: - TextBlock (a)  
+&nbsp;&nbsp;&nbsp;&nbsp;**types**:  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Body  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HeaderDescription  
+:x: - Divider (a)  
+:x: - Icon (a)  
+
+**atom - (a)**  
+**molecule - (m)**  
+**organism - (o)**  
+
+See [Atomic Design][0] by Brad Frost for more information.
+
+
+#### Application Level
+
+:x: - Templates  
+&nbsp;&nbsp;:x: - MainView  
+&nbsp;&nbsp;:x: - DetailView  
+
+:x: - Pages  
+&nbsp;&nbsp;:x: - Main  
+&nbsp;&nbsp;:x: - ProjectDetail  
+
+### Future Ideas
+
+* Animations? 
+* Sticky HOC
+* Toggle buttons for interesting effects
+* Custom Animations section
+* D3? 
+
+[0]: http://atomicdesign.bradfrost.com/
