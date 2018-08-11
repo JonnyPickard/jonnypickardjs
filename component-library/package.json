@@ -12,15 +12,18 @@
   },
   "homepage": "https://github.com/JonnyPickard/react-component-lib-boilerplate#readme",
   "scripts": {
-    "start": "yarn && yarn storybook",
-    "storybook": "start-storybook -p 6006 -s node_modules/modern-normalize",
+    "start": "yarn && run-p storybook open-storybook",
+    "open-storybook": "open -a \"Google Chrome\" http://localhost:6006",
+    "storybook": "yarn start-storybook -p 6006 -s ../node_modules/modern-normalize",
     "build-storybook": "build-storybook",
     "preinstall": "node scripts/npm/preinstall.js",
     "create-component": "create-component -c config/component-generator/cct.config.js && git add . && yarn lint-staged",
     "publish-components": "lerna publish --since"
   },
   "lint-staged": {
-    "*.js": ["eslint --fix"]
+    "*.js": [
+      "eslint --fix"
+    ]
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.4.8",
@@ -71,6 +74,7 @@
     "lint-staged": "^7.2.0",
     "modern-normalize": "^0.5.0",
     "node-sass": "4.9.0",
+    "npm-run-all": "^4.1.3",
     "postcss-flexbugs-fixes": "3.2.0",
     "postcss-loader": "2.0.8",
     "postcss-nested": "3.0.0",
