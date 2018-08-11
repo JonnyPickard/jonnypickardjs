@@ -1,13 +1,24 @@
-import { configure } from '@storybook/react';
+import { configure, addDecorator } from '@storybook/react';
 import { setOptions } from '@storybook/addon-options';
+import backgrounds from '@storybook/addon-backgrounds';
+import centered from '@storybook/addon-centered';
+
+addDecorator(
+  backgrounds([
+    { name: 'white', value: '#FFFFFF', default: true },
+    { name: 'grayscale', value: '#424242' }
+  ])
+);
+
+addDecorator(centered);
 
 setOptions({
-  name: 'component-library',
-  url: 'https://github.com/JonnyPickard/react-component-lib-boilerplate',
+  name: "Jonny's Components",
+  url: 'https://github.com/jonnypickard.github.io',
   goFullScreen: false,
   showStoriesPanel: true,
-  showAddonPanel: false,
   addonPanelInRight: false
+  // showAddonPanel: false,
 });
 
 // automatically import all files ending in *.stories.js

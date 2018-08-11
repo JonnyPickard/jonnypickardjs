@@ -1,6 +1,8 @@
 module.exports = {
   rootDir: '../../',
-  collectCoverageFrom: ['src/**/*.js'],
+  verbose: true,
+  testURL: 'http://localhost/',
+  collectCoverageFrom: ['src/**/*.js', '!**/*.stories.js', '!**/*index.js'],
   setupFiles: ['<rootDir>/config/jest/test-setup.js'],
   testMatch: [
     '<rootDir>/src/**/__tests__/**/*.js',
@@ -13,5 +15,6 @@ module.exports = {
   moduleNameMapper: {
     '^.+\\.scss$': 'identity-obj-proxy'
   },
+  moduleDirectories: ['node_modules', '<rootDir>', '<rootDir>/src'],
   transformIgnorePatterns: ['[/\\\\]node_modules[/\\\\].+\\.js$']
 };
