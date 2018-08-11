@@ -60,7 +60,7 @@ Portfolio Website
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Body  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HeaderDescription  
 :x: - Divider (a)  
-:x: - Icon (a)  
+:white_check_mark: - Icon (a)  
 
 **atom - (a)**  
 **molecule - (m)**  
