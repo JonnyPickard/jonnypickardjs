@@ -20,20 +20,20 @@
     width: 30px;
   }
 
-  // Greyscale
-  &greyscaleColor1 {
+  // Grayscale
+  &grayscaleColor1 {
     @include svgFill($grayscale-palette-1);
   }
-  &greyscaleColor2 {
+  &grayscaleColor2 {
     @include svgFill($grayscale-palette-2);
   }
-  &greyscaleColor3 {
+  &grayscaleColor3 {
     @include svgFill($grayscale-palette-3);
   }
-  &greyscaleColor4 {
+  &grayscaleColor4 {
     @include svgFill($grayscale-palette-4);
   }
-  &greyscaleColor5 {
+  &grayscaleColor5 {
     @include svgFill($grayscale-palette-5);
   }
 

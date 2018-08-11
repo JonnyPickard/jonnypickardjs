@@ -1,0 +1,65 @@
+@import 'src/style/variables.scss';
+
+@mixin pickColor($dividerColor) {
+  background-color: $dividerColor
+}
+
+.divider {
+  border: none;
+  &horizontal {
+    width: 100%;
+    &xs {
+      height: 1px;
+    }
+    &sm {
+      height: 2px;
+    }
+    &md {
+      height: 4px;
+    }
+  }
+  &vertical {
+    display: inline-block;
+    height: 100%;
+    &xs {
+      width: 1px;
+    }
+    &sm {
+      width: 2px;
+    }
+    &md {
+      width: 4px;
+    }
+  }
+  &colors {
+    // Grayscale
+    &grayscaleColor1 {
+      @include pickColor($grayscale-palette-1);
+    }
+    &grayscaleColor2 {
+      @include pickColor($grayscale-palette-2);
+    }
+    &grayscaleColor3 {
+      @include pickColor($grayscale-palette-3);
+    }
+    &grayscaleColor4 {
+      @include pickColor($grayscale-palette-4);
+    }
+    &grayscaleColor5 {
+      @include pickColor($grayscale-palette-5);
+    }
+
+    // B / W
+    &black {
+      @include pickColor($black);
+    }
+    &white {
+      @include pickColor($white);
+    }
+
+    // Custom
+    &linkedinBlue {
+      @include pickColor($linkedin-blue);
+    }
+  }
+}
