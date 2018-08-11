@@ -1,7 +1,6 @@
 import { configure, addDecorator } from '@storybook/react';
 import { setOptions } from '@storybook/addon-options';
 import backgrounds from '@storybook/addon-backgrounds';
-import centered from '@storybook/addon-centered';
 
 addDecorator(
   backgrounds([
@@ -10,7 +9,6 @@ addDecorator(
   ])
 );
 
-addDecorator(centered);
 
 setOptions({
   name: "Jonny's Components",

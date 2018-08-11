@@ -59,7 +59,7 @@ Portfolio Website
 &nbsp;&nbsp;&nbsp;&nbsp;**types**:  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Body  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HeaderDescription  
-:x: - Divider (a)  
+:white_check_mark: - Divider (a)  
 :white_check_mark: - Icon (a)  
 
 **atom - (a)**  

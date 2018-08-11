@@ -12,7 +12,7 @@ describe('<${componentName} />', () => {
     const wrapper = mount(<${componentName} theme={${uncapitalize(
   componentName
 )}Theme}/>);
-    expect(wrapper).toMatchSnapshot();
+    expect(wrapper.find('${componentName}')).toHaveLength(1);
   });
 });
 `;
