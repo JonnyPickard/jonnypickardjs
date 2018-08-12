@@ -1,0 +1,24 @@
+@import 'src/style/variables.scss';
+
+.text {
+  &types {
+    &body {
+      font-size: $font-size-body;
+    }
+    &description {
+      font-size: $font-size-description;
+    }
+    &note {
+      font-size: $font-size-note;
+    }
+  }
+  &Bold {
+    font-weight: $font-weight-bold;
+  }
+  &Italic {
+    font-style: italic;
+  }
+  &Underlined {
+    text-decoration: underline;
+  }
+}

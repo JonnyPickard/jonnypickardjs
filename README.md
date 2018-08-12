@@ -49,13 +49,13 @@ Portfolio Website
 #### Component Library
 
 :x: - Card (o)  
-:x: - Image (a)  
+:white_check_mark: - Image (a)  
 :x: - ProfilePhoto (m)  
 :x: - Header / Nav (o)  
 :white_check_mark: - Heading (a)  
 &nbsp;&nbsp;&nbsp;&nbsp;**types**:  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [h1 - h6]  
-:x: - TextBlock (a)  
+:white_check_mark: - Text (a)  
 &nbsp;&nbsp;&nbsp;&nbsp;**types**:  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Body  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HeaderDescription  

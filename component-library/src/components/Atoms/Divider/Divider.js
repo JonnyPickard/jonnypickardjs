@@ -10,7 +10,7 @@ type Props = {
   theme: {
     [css_modules_class: string]: string
   },
-  color: colorClassSelectors,
+  dividerColor: colorClassSelectors,
   dividerSize: 'xs' | 'sm' | 'md',
   extendStyle?: string
 };
@@ -22,7 +22,7 @@ class Divider extends PureComponent<Props> {
   static displayName = 'Divider';
 
   static defaultProps = {
-    dividerColor: 'grayscalePal'
+    dividerColor: 'grayscaleColor5'
   };
 
   getClassSelectorForSize = (): string => {
