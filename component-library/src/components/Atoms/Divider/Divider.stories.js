@@ -15,7 +15,7 @@ const containerStyle = {
   alignItems: 'center'
 };
 
-storiesOf('Divider', module)
+storiesOf('Atoms/Divider', module)
   .addDecorator(withKnobs)
   .add('default', () => {
     const props = {

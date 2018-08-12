@@ -18,7 +18,7 @@ const iconOptions = iconNames.reduce((optionsObject, iconName) => {
 
 const sizes = ['xs', 'sm', 'md', 'lg', 'xlg'];
 
-storiesOf('Icon', module)
+storiesOf('Atoms/Icon', module)
   .addDecorator(centered)
   .addDecorator(withKnobs)
   .add('default', () => {
