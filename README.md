@@ -52,7 +52,7 @@ Portfolio Website
 :x: - Image (a)  
 :x: - ProfilePhoto (m)  
 :x: - Header / Nav (o)  
-:x: - Heading (a)  
+:white_check_mark: - Heading (a)  
 &nbsp;&nbsp;&nbsp;&nbsp;**types**:  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [h1 - h6]  
 :x: - TextBlock (a)  
