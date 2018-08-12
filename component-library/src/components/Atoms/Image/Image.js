@@ -10,7 +10,6 @@ type Props = {
   },
   src: string,
   alt: string,
-
   otherOptions?: Object,
   extendStyle?: string
 };
