@@ -50,7 +50,7 @@ Portfolio Website
 
 ##### Core
 
-:x: - Card (o)  
+:white_check_mark: - Card (o)  
 :white_check_mark: - Image (a)  
 :white_check_mark: - ProfilePhoto (m)  
 :x: - Header / Nav (o)  
