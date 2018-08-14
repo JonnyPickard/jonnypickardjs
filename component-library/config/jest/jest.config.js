@@ -13,7 +13,8 @@ module.exports = {
     '^.+\\.js$': 'babel-jest'
   },
   moduleNameMapper: {
-    '^.+\\.scss$': 'identity-obj-proxy'
+    '^.+\\.scss$': 'identity-obj-proxy',
+    '@jonnypickardjs(.*)$': '<rootDir>/src/components/$1'
   },
   moduleDirectories: ['node_modules', '<rootDir>', '<rootDir>/src'],
   transformIgnorePatterns: ['[/\\\\]node_modules[/\\\\].+\\.js$']
