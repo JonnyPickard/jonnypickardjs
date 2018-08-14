@@ -1,0 +1,28 @@
+@import 'src/style/variables.scss';
+
+.projectCard {
+  background: $white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 0 2px 7px 0 $box-shadow-light;
+  overflow: hidden;
+  
+  &ImageSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &TitleSection {
+    font-size: $font-size-h2;
+    display: flex;
+    margin: 15px;
+    align-items: center;
+  }
+
+  &WithScaleEffect {
+    transition: all .2s ease-in-out;
+    &:hover { transform: scale(1.05); }
+  }
+}

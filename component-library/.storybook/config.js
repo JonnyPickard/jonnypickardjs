@@ -1,6 +1,9 @@
 import { configure, addDecorator } from '@storybook/react';
 import { setOptions } from '@storybook/addon-options';
 import backgrounds from '@storybook/addon-backgrounds';
+// import { configureViewport } from '@storybook/addon-viewport';
+
+// configureViewport();
 
 addDecorator(
   backgrounds([
@@ -8,7 +11,6 @@ addDecorator(
     { name: 'grayscale', value: '#424242' }
   ])
 );
-
 
 setOptions({
   name: "Jonny's Components",
