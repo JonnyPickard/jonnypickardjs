@@ -1,0 +1,8 @@
+@import 'src/style/variables.scss';
+
+.withLink {
+  &NoDefaultTheme {
+    text-decoration: none;
+    color: unset;
+  }
+}
