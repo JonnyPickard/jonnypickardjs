@@ -48,9 +48,11 @@ Portfolio Website
 
 #### Component Library
 
+##### Core
+
 :x: - Card (o)  
 :white_check_mark: - Image (a)  
-:x: - ProfilePhoto (m)  
+:white_check_mark: - ProfilePhoto (m)  
 :x: - Header / Nav (o)  
 :white_check_mark: - Heading (a)  
 &nbsp;&nbsp;&nbsp;&nbsp;**types**:  
@@ -68,6 +70,9 @@ Portfolio Website
 
 See [Atomic Design][0] by Brad Frost for more information.
 
+##### HOC
+
+:white_check_mark: - WithLink
 
 #### Application Level
 
