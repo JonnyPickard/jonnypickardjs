@@ -72,7 +72,7 @@ See [Atomic Design][0] by Brad Frost for more information.
 
 ##### HOC
 
-:x: - WithLink
+:white_check_mark: - WithLink
 
 #### Application Level
 
