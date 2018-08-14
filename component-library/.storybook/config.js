@@ -9,7 +9,6 @@ addDecorator(
   ])
 );
 
-
 setOptions({
   name: "Jonny's Components",
   url: 'https://github.com/jonnypickard.github.io',
