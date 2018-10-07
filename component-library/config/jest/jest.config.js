@@ -2,7 +2,12 @@ module.exports = {
   rootDir: '../../',
   verbose: true,
   testURL: 'http://localhost/',
-  collectCoverageFrom: ['src/**/*.js', '!**/*.stories.js', '!**/*index.js'],
+  collectCoverageFrom: [
+    'src/**/*.js',
+    '!**/*.stories.js',
+    '!**/*index.js',
+    '!src/shared/storybook-helpers/*.js'
+  ],
   setupFiles: ['<rootDir>/config/jest/test-setup.js'],
   testMatch: [
     '<rootDir>/src/**/__tests__/**/*.js',
