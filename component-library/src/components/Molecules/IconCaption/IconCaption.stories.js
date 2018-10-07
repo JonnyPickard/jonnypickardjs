@@ -2,22 +2,22 @@ import React from 'react';
 
 import { storiesOf } from '@storybook/react';
 import { withKnobs, select } from '@storybook/addon-knobs';
-import centered from '@storybook/addon-centered';
-
 import icons from 'assets/icons/icons.svg';
 import iconNames from 'assets/icons/iconNames.js';
 import { iconOptions } from 'shared/storybook-helpers/iconOptions.js';
-import colors from 'style/colors/colorSelectors';
+import centered from '@storybook/addon-centered';
 
-import { Icon, iconThemeDefault } from '.';
+import colors from 'src/style/colors/colorSelectors';
+
+import { IconCaption, iconCaptionThemeDefault } from '.';
 
 const sizes = ['xs', 'sm', 'md', 'lg', 'xlg'];
 
-storiesOf('Atoms/Icon', module)
+storiesOf('Molecules/IconCaption', module)
   .addDecorator(centered)
   .addDecorator(withKnobs)
   .add('default', () => {
-    const color = select('Color', colors, 'grayscaleColor5', 'Icon-01');
+    const color = select('Color', colors, 'linkedinBlue', 'Icon-01');
     const iconName = select(
       'Icon name',
       iconOptions,
@@ -27,11 +27,11 @@ storiesOf('Atoms/Icon', module)
     const iconSize = select('Icon size', sizes, 'md', 'Icon-01');
 
     return (
-      <Icon
-        color={color}
+      <IconCaption
+        iconColor={color}
         iconName={iconName}
         iconSize={iconSize}
-        theme={iconThemeDefault}
+        theme={iconCaptionThemeDefault}
       />
     );
   });
