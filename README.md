@@ -54,7 +54,7 @@ Portfolio Website
 :white_check_mark: - Image (a)  
 :white_check_mark: - ProfilePhoto (m)  
 :x: - Header / Nav (o)  
-:x: - Icon Caption (o)  
+:white_check_mark: - Icon Caption (o)  
 :white_check_mark: - Heading (a)  
 &nbsp;&nbsp;&nbsp;&nbsp;**types**:  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [h1 - h6]  
