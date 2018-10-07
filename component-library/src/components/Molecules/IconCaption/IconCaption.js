@@ -7,6 +7,8 @@ import { Icon, iconThemeDefault } from '@jonnypickardjs/Atoms/Icon';
 import { Heading, headingThemeDefault } from '@jonnypickardjs/Atoms/Heading';
 
 import type { colorClassSelectors } from 'shared/flow-types/colorSelectorType.js';
+import type { iconSizeSelectors } from 'shared/flow-types/iconSizeSelectorType.js';
+import type { headingTypeSelectors } from 'shared/flow-types/headingTypeSelectorType.js';
 
 type Props = {
   /** CSS modules style object */
@@ -14,11 +16,11 @@ type Props = {
     [css_modules_class: string]: string
   },
   iconName: string,
-  iconSize: 'xs' | 'sm' | 'md' | 'lg' | 'xlg',
+  iconSize: iconSizeSelectors,
   /** Enum types that map to the css color class selectors */
   iconColor: colorClassSelectors,
   captionText: string,
-  captionSize: 'h2' | 'h3' | 'h4' | 'h5' | 'h6',
+  captionSize: headingTypeSelectors,
   extendStyle?: string
 };
 

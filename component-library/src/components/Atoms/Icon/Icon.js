@@ -4,6 +4,7 @@ import React, { PureComponent } from 'react';
 import classNames from 'classnames';
 
 import type { colorClassSelectors } from 'shared/flow-types/colorSelectorType.js';
+import type { iconSizeSelectors } from 'shared/flow-types/iconSizeSelectorType.js';
 
 type Props = {
   /** CSS modules style object */
@@ -14,8 +15,8 @@ type Props = {
   iconName: string,
   /** Enum types that map to the css color class selectors */
   color: colorClassSelectors,
-  extendStyle?: Array<*> | string,
-  iconSize: 'xs' | 'sm' | 'md' | 'lg' | 'xlg'
+  iconSize: iconSizeSelectors,
+  extendStyle?: Array<*> | string
 };
 
 /**
