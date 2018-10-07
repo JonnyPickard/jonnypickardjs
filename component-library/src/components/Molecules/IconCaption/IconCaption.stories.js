@@ -2,11 +2,11 @@ import React from 'react';
 
 import { storiesOf } from '@storybook/react';
 import { withKnobs, select, text } from '@storybook/addon-knobs';
+import centered from '@storybook/addon-centered';
+
 import icons from 'assets/icons/icons.svg';
 import iconNames from 'assets/icons/iconNames.js';
 import { iconOptions } from 'shared/storybook-helpers/iconOptions.js';
-import centered from '@storybook/addon-centered';
-
 import colors from 'src/style/colors/colorSelectors';
 
 import { IconCaption, iconCaptionThemeDefault } from '.';

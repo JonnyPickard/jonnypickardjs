@@ -1,8 +1,6 @@
-const { uncapitalize } = require('./helpers');
-
 module.exports = componentName => `\
 {
-  "name": "@jonnypickardjs/${uncapitalize(componentName)}",
+  "name": "@jonnypickardjs/${String(componentName).toLowerCase()}",
   "description": "Presentational",
   "version": "0.0.0",
   "main": "./index.js",
