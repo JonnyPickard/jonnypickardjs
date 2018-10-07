@@ -2,19 +2,14 @@ import React from 'react';
 
 import { storiesOf } from '@storybook/react';
 import { withKnobs, select } from '@storybook/addon-knobs';
-import icons from 'assets/icons/icons.svg';
-import iconNames from 'assets/icons/iconNames.js';
 import centered from '@storybook/addon-centered';
 
-import colors from 'src/style/colors/colorSelectors';
+import icons from 'assets/icons/icons.svg';
+import iconNames from 'assets/icons/iconNames.js';
+import { iconOptions } from 'shared/storybook-helpers/iconOptions.js';
+import colors from 'style/colors/colorSelectors';
 
 import { Icon, iconThemeDefault } from '.';
-
-const iconOptions = iconNames.reduce((optionsObject, iconName) => {
-  optionsObject[`${icons}#${iconName}`] = iconName;
-
-  return optionsObject;
-}, {});
 
 const sizes = ['xs', 'sm', 'md', 'lg', 'xlg'];
 
@@ -30,6 +25,7 @@ storiesOf('Atoms/Icon', module)
       'Icon-01'
     );
     const iconSize = select('Icon size', sizes, 'md', 'Icon-01');
+
     return (
       <Icon
         color={color}
