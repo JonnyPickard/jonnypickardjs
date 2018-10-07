@@ -5,8 +5,8 @@ module.exports = {
   collectCoverageFrom: [
     'src/**/*.js',
     '!**/*.stories.js',
-    '!**/*index.js'
-    // '!src/shared/storybook-helpers/*.js'
+    '!**/*index.js',
+    '!src/shared/storybook-helpers/*.js'
   ],
   coverageThreshold: {
     global: {
