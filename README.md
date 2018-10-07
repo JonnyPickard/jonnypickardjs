@@ -53,7 +53,8 @@ Portfolio Website
 :white_check_mark: - Card (o)  
 :white_check_mark: - Image (a)  
 :white_check_mark: - ProfilePhoto (m)  
-:x: - Header / Nav (o)  
+:x: HeroSection (o) 
+:x: NavBar (o)  
 :white_check_mark: - Icon Caption (o)  
 :white_check_mark: - Heading (a)  
 &nbsp;&nbsp;&nbsp;&nbsp;**types**:  
