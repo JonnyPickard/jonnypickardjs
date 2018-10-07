@@ -14,12 +14,6 @@
 }
 
 .icon {
-  &,
-  > svg {
-    height: 30px;
-    width: 30px;
-  }
-
   &sizes {
     &xs {
       @include setIconSize($icon-size-xs)

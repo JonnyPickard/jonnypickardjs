@@ -4,6 +4,9 @@ import React, { PureComponent } from 'react';
 import classNames from 'classnames';
 
 import { Icon, iconThemeDefault } from '@jonnypickardjs/Atoms/Icon';
+import { Heading, headingThemeDefault } from '@jonnypickardjs/Atoms/Heading';
+
+import type { colorClassSelectors } from 'shared/flow-types/colorSelectorType.js';
 
 type Props = {
   /** CSS modules style object */
@@ -11,7 +14,11 @@ type Props = {
     [css_modules_class: string]: string
   },
   iconName: string,
-  iconColor: string,
+  iconSize: 'xs' | 'sm' | 'md' | 'lg' | 'xlg',
+  /** Enum types that map to the css color class selectors */
+  iconColor: colorClassSelectors,
+  captionText: string,
+  captionSize: 'h2' | 'h3' | 'h4' | 'h5' | 'h6',
   extendStyle?: string
 };
 
@@ -21,15 +28,38 @@ type Props = {
 class IconCaption extends PureComponent<Props> {
   static displayName = 'IconCaption';
 
+  static defaultProps = {
+    captionSize: 'h2',
+    iconSize: 'md'
+  };
+
   /**
    * Render
    * @return {Element<*>} JSX
    */
   render() {
-    const { theme, extendStyle, iconName, iconColor } = this.props;
+    const {
+      theme,
+      extendStyle,
+      iconName,
+      iconColor,
+      iconSize,
+      captionText,
+      captionSize
+    } = this.props;
     return (
       <div className={classNames(theme.iconCaption, extendStyle)}>
-        <Icon iconName={iconName} color={iconColor} theme={iconThemeDefault} />
+        <Icon
+          iconName={iconName}
+          iconSize={iconSize}
+          color={iconColor}
+          theme={iconThemeDefault}
+        />
+        <Heading
+          content={captionText}
+          headingType={captionSize}
+          theme={headingThemeDefault}
+        />
       </div>
     );
   }
