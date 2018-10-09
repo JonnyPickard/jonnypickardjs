@@ -64,6 +64,21 @@ const props = {
   heroBlurb: loremIpsum({ count: 10 })
 };
 
+const storyStyle = {
+  padding: '30px 10px',
+  margin: 10,
+  borderRadius: 5
+};
+
 storiesOf('Organisms/HeroSection', module)
   .addDecorator(withKnobs)
-  .add('default', () => <HeroSection {...props} heroLinks={heroLinks()} />);
+  .add('default', () => (
+    <div>
+      <h1 style={{ textAlign: 'center', background: '#e2e2e2' }}>
+        Desktop/ Tablet Only
+      </h1>
+      <div style={storyStyle}>
+        <HeroSection {...props} heroLinks={heroLinks()} />
+      </div>
+    </div>
+  ));
