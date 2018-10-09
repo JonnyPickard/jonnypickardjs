@@ -1,5 +1,4 @@
 // @flow
-
 import React, { PureComponent } from 'react';
 import classNames from 'classnames';
 
@@ -68,14 +67,19 @@ class HeroSection extends PureComponent<Props> {
       heroLinks,
       heroBlurb
     } = this.props;
+
+    const { heroSection, heroSectionTitlesAndLinks } = theme;
+
     return (
-      <div className={classNames(theme.heroSection, extendStyle)}>
+      <div className={classNames(heroSection, extendStyle)}>
         {/* Left Main Section - Image */}
-        <Image theme={imageTheme} src={heroImage.src} alt={heroImage.alt} />
+        <div>
+          <Image theme={imageTheme} src={heroImage.src} alt={heroImage.alt} />
+        </div>
         {/* Right Main Section - Profile Info */}
         <div>
           {/* Profile Section */}
-          <div>
+          <div className={heroSectionTitlesAndLinks}>
             {/* Title + Links */}
             <div>
               <Heading
@@ -117,8 +121,8 @@ class HeroSection extends PureComponent<Props> {
                 }
               )}
             </div>
-            <Text theme={textTheme} content={heroBlurb} />
           </div>
+          <Text theme={textTheme} content={heroBlurb} />
         </div>
       </div>
     );

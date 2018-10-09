@@ -1,3 +1,15 @@
 @import 'src/style/variables.scss';
 
-// .heroSection {}
+.heroSection {
+  display: flex;
+
+  // Profile Photo
+  > div:first-of-type {
+    margin-right: 40px
+  }
+
+  &TitlesAndLinks {
+    display: flex;
+    flex-direction: row;
+  }
+}
