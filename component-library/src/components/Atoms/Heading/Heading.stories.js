@@ -13,12 +13,9 @@ const props = {
 const types = ['display', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'];
 
 const allHeadings = types.map(type => (
-  <Heading
-    content={`Heading - ${type}`}
-    key={type}
-    headingType={type}
-    {...props}
-  />
+  <p key={type}>
+    <Heading content={`Heading - ${type}`} headingType={type} {...props} />
+  </p>
 ));
 
 storiesOf('Atoms/Heading', module)
