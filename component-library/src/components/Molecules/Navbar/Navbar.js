@@ -27,7 +27,8 @@ type Props = {
     Array<{
       iconName: string,
       iconSize: iconSizeSelectors,
-      iconColor: colorClassSelectors
+      iconColor: colorClassSelectors,
+      href: string
     }>
   ],
   profilePhoto: {
