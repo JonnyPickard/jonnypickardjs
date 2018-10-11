@@ -59,26 +59,15 @@ const props = {
     src: 'http://via.placeholder.com/140x200',
     alt: 'Profile Image'
   },
+  heroImageMobile: {
+    src: 'http://via.placeholder.com/200x200',
+    alt: 'Profile Image'
+  },
   heroTitle: 'Jonny Pickard',
   heroSubtitle: 'Software Engineer',
   heroBlurb: loremIpsum({ count: 10 })
 };
 
-const storyStyle = {
-  padding: '30px 10px',
-  margin: 10,
-  borderRadius: 5
-};
-
 storiesOf('Organisms/HeroSection', module)
   .addDecorator(withKnobs)
-  .add('default', () => (
-    <div>
-      <h1 style={{ textAlign: 'center', background: '#e2e2e2' }}>
-        Desktop/ Tablet Only
-      </h1>
-      <div style={storyStyle}>
-        <HeroSection {...props} heroLinks={heroLinks()} />
-      </div>
-    </div>
-  ));
+  .add('default', () => <HeroSection {...props} heroLinks={heroLinks()} />);

@@ -19,6 +19,10 @@ import {
   IconCaption,
   iconCaptionThemeDefault as iconCaptionTheme
 } from '@jonnypickardjs/Molecules/IconCaption';
+import {
+  ProfilePhoto,
+  profilePhotoThemeDefault as profilePhotoTheme
+} from '@jonnypickardjs/Molecules/ProfilePhoto';
 
 import {
   WithLink,
@@ -35,6 +39,10 @@ type Props = {
     [css_modules_class: string]: string
   },
   heroImage: {
+    src: string,
+    alt: string
+  },
+  heroImageMobile: {
     src: string,
     alt: string
   },
@@ -72,7 +80,8 @@ class HeroSection extends PureComponent<Props> {
       heroTitle,
       heroSubtitle,
       heroLinks,
-      heroBlurb
+      heroBlurb,
+      heroImageMobile
     } = this.props;
 
     const {
@@ -80,13 +89,21 @@ class HeroSection extends PureComponent<Props> {
       heroSectionProfilePhoto,
       heroSectionTitlesAndLinks,
       heroSectionTitles,
-      heroSectionLinks
+      heroSectionLinks,
+      heroSectionBlurb
     } = theme;
 
     return (
       <div className={classNames(heroSection, extendStyle)}>
         {/* Left Main Section - Image */}
         <div className={heroSectionProfilePhoto}>
+          {/* Circular photo - Mobile Only */}
+          <ProfilePhoto
+            theme={profilePhotoTheme}
+            src={heroImageMobile.src}
+            alt={heroImage.alt}
+          />
+          {/* Standard Image - Desktop */}
           <Image theme={imageTheme} src={heroImage.src} alt={heroImage.alt} />
         </div>
         {/* Right Main Section - Profile Info */}
@@ -140,7 +157,12 @@ class HeroSection extends PureComponent<Props> {
               )}
             </div>
           </div>
-          <Text theme={textTheme} content={heroBlurb} />
+          {/* Blurb */}
+          <Text
+            theme={textTheme}
+            content={heroBlurb}
+            extendStyle={heroSectionBlurb}
+          />
         </div>
       </div>
     );
