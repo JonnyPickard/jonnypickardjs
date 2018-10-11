@@ -48,7 +48,7 @@ Portfolio Website
 - [x] - Image (a)  
 - [x] - ProfilePhoto (m)  
 - [x] - HeroSection (o)  
-- [ ] - NavBar (o)  
+- [x] - NavBar (o)  
 - [x] - Icon Caption (o)  
 - [x] - Heading (a)  
 &nbsp;&nbsp;&nbsp;&nbsp;**types**:  

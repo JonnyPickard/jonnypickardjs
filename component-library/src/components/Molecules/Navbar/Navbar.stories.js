@@ -49,6 +49,6 @@ const props = {
   }
 };
 
-storiesOf('Navbar', module)
+storiesOf('Molecules/Navbar', module)
   .addDecorator(withKnobs)
   .add('default', () => <Navbar socialIcons={navbarIcons()} {...props} />);
