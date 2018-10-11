@@ -38,10 +38,10 @@
   &TitlesAndLinks {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     
     @media #{$width-desktop} {
       justify-content: flex-start;
-      margin-bottom: 20px;
   
       > div {
         flex: 1;
@@ -59,15 +59,24 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-bottom: 30px;
 
-    @media #{$width-desktop} {
-      text-align: left;
-      margin-right: 10px;
-    }
-
+    white-space: nowrap;
+    
+    
     > h1 {
       margin-bottom: 20px;
+    }
+    > h2 {
+      margin-bottom: 30px;
+    }
+    
+    @media #{$width-desktop} {
+      > h1,
+      > h2 {
+        margin-bottom: 20px;
+      }
+      text-align: left;
+      margin: 0 10px 0 0;
     }
   }
 
@@ -76,8 +85,8 @@
     
     @media #{$width-desktop} {
       display: block;
-      // First Link (IconCaption- Linkedin)
-      > a:first-of-type {
+      // (IconCaption- Linkedin)
+      > a {
         margin-bottom: 20px;
       }
     }
