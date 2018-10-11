@@ -5,28 +5,22 @@ Portfolio Website
 
 ## Designs
 
-### Homepage Desktop
+### Homepage Desktop + Mobile
 
 <p align="center" style="background: white;">
-  <img src="./docs/designs/homepage-desktop.png" alt="homepage-desktop">
-</p>
-
-### Homepage Mobile
-
-<p align="center" style="background: white;">
-  <img src="./docs/designs/homepage-mobile.png" alt="homepage-mobile">
+  <img src="./docs/designs/homepage-desktop-and-mobile.png" alt="Homepage Desktop & Mobile">
 </p>
 
 ### Project Detail Pages
 
 <p align="center" style="background: white;">
-  <img src="./docs/designs/project-detail-page.png" alt="project-detail-page">
+  <img src="./docs/designs/project-detail-page.png" alt="Project Detail Page">
 </p>
 
 ### Homepage Desktop Compact Nav Variation
 
 <p align="center" style="background: white;">
-  <img src="./docs/designs/homepage-desktop-compact-nav-variation.png" alt="homepage-desktop-compact-nav-variation">
+  <img src="./docs/designs/homepage-desktop-compact-nav-variation.png" alt="Homepage Desktop Compact Nav Variation">
 </p>
 
 

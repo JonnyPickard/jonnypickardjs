@@ -7,8 +7,17 @@
   "author": "Jonny Pickard <jonathandpickard@gmail.com>",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "COMPONENT_LIBRARY": "",
+    "start-storybook": "yarn wsrun start @jonnypickardjs/component-library",
+    "test-components": "yarn wsrun test @jonnypickardjs/component-library",
+    "test-components:coverage": "yarn wsrun test-coverage @jonnypickardjs/component-library"
+  },
   "workspaces": [
     "component-library",
     "app"
-  ]
+  ],
+  "devDependencies": {
+    "wsrun": "^2.2.1"
+  }
 }
