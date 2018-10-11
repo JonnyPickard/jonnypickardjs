@@ -2,6 +2,7 @@
 
 import React, { PureComponent } from 'react';
 import classNames from 'classnames';
+import get from 'lodash.get';
 
 import { Icon, iconThemeDefault } from '@jonnypickardjs/Atoms/Icon';
 import { Heading, headingThemeDefault } from '@jonnypickardjs/Atoms/Heading';
@@ -71,19 +72,19 @@ class Navbar extends PureComponent<Props> {
             <ProfilePhoto
               theme={profilePhotoThemeDefault}
               proPhotoSize="sm"
-              src={profilePhoto.src}
-              alt={profilePhoto.alt}
+              src={get(profilePhoto, 'src', '')}
+              alt={get(profilePhoto, 'alt', 'Profile Photo')}
             />
             <WithLink
               theme={withLinkTheme}
               noStyling
-              href={socialIcons[0].href}
+              href={get(socialIcons, '0.href', '')}
             >
               <Icon
                 theme={iconThemeDefault}
-                iconName={socialIcons[0].iconName}
-                color={socialIcons[0].iconColor}
-                iconSize={socialIcons[0].iconSize}
+                iconName={get(socialIcons, '0.iconName', '')}
+                color={get(socialIcons, '0.iconColor')}
+                iconSize={get(socialIcons, '0.iconSize')}
               />
             </WithLink>
           </div>
@@ -91,8 +92,8 @@ class Navbar extends PureComponent<Props> {
           <Heading
             theme={headingThemeDefault}
             extendStyle={theme.navbarTitle}
-            content={navbarTitle.text}
-            headingType={navbarTitle.size}
+            content={get(navbarTitle, 'text', '')}
+            headingType={get(navbarTitle, 'size', 'h3')}
           />
           {/* Right Icon Section */}
           <div className={navbarRightSection}>
@@ -101,13 +102,13 @@ class Navbar extends PureComponent<Props> {
                 theme={withLinkTheme}
                 noStyling
                 key={`navbar-icon-${index}`}
-                href={icon.href}
+                href={get(icon, 'href', '')}
               >
                 <Icon
                   theme={iconThemeDefault}
-                  iconName={icon.iconName}
-                  color={icon.iconColor}
-                  iconSize={icon.iconSize}
+                  iconName={get(icon, 'iconName', '')}
+                  color={get(icon, 'iconColor')}
+                  iconSize={get(icon, 'iconSize', 'md')}
                 />
               </WithLink>
             ))}
