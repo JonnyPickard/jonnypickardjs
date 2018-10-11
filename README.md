@@ -44,21 +44,21 @@ Portfolio Website
 
 ##### Core
 
-:white_check_mark: - Card (o)  
-:white_check_mark: - Image (a)  
-:white_check_mark: - ProfilePhoto (m)  
-:x: HeroSection (o) 
-:x: NavBar (o)  
-:white_check_mark: - Icon Caption (o)  
-:white_check_mark: - Heading (a)  
+- [x] - Card (o)  
+- [x] - Image (a)  
+- [x] - ProfilePhoto (m)  
+- [x] HeroSection (o)  
+- [ ] NavBar (o)  
+- [x] - Icon Caption (o)  
+- [x] - Heading (a)  
 &nbsp;&nbsp;&nbsp;&nbsp;**types**:  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [h1 - h6]  
-:white_check_mark: - Text (a)  
+- [x] - Text (a)  
 &nbsp;&nbsp;&nbsp;&nbsp;**types**:  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Body  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HeaderDescription  
-:white_check_mark: - Divider (a)  
-:white_check_mark: - Icon (a)  
+- [x] - Divider (a)  
+- [x] - Icon (a)  
 
 **atom - (a)**  
 **molecule - (m)**  
@@ -68,17 +68,17 @@ See [Atomic Design][0] by Brad Frost for more information.
 
 ##### HOC
 
-:white_check_mark: - WithLink
+- [x] - WithLink
 
 #### Application Level
 
-:x: - Templates  
-&nbsp;&nbsp;:x: - MainView  
-&nbsp;&nbsp;:x: - DetailView  
+- [ ] - Templates  
+  - [ ] - MainView  
+  - [ ] - DetailView  
 
-:x: - Pages  
-&nbsp;&nbsp;:x: - Main  
-&nbsp;&nbsp;:x: - ProjectDetail  
+- [ ] - Pages  
+  - [ ] - Main  
+  - [ ] - ProjectDetail  
 
 ### Future Ideas
 
