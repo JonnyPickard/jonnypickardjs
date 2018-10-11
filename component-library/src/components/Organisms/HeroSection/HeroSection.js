@@ -2,6 +2,7 @@
 
 import React, { PureComponent } from 'react';
 import classNames from 'classnames';
+import get from 'lodash.get';
 
 import {
   Image,
@@ -100,11 +101,15 @@ class HeroSection extends PureComponent<Props> {
           {/* Circular photo - Mobile Only */}
           <ProfilePhoto
             theme={profilePhotoTheme}
-            src={heroImageMobile.src}
-            alt={heroImage.alt}
+            src={get(heroImageMobile, 'src', '')}
+            alt={get(heroImage, 'alt', 'Hero Image')}
           />
           {/* Standard Image - Desktop */}
-          <Image theme={imageTheme} src={heroImage.src} alt={heroImage.alt} />
+          <Image
+            theme={imageTheme}
+            src={get(heroImage, 'src', '')}
+            alt={get(heroImage, 'alt', 'Hero Image')}
+          />
         </div>
         {/* Right Main Section - Profile Info */}
         <div>
@@ -126,37 +131,32 @@ class HeroSection extends PureComponent<Props> {
               />
             </div>
             <div className={heroSectionLinks}>
-              {heroLinks.map(
-                (
-                  {
-                    iconName,
-                    iconSize,
-                    iconColor,
-                    captionSize,
-                    captionText,
-                    href
-                  },
-                  index
-                ) => {
-                  return (
-                    <WithLink
-                      noStyling
-                      theme={withLinkTheme}
-                      href={href}
-                      key={`hero-icon-${index}`}
-                    >
-                      <IconCaption
-                        theme={iconCaptionTheme}
-                        iconName={iconName}
-                        iconSize={iconSize}
-                        iconColor={iconColor}
-                        captionSize={captionSize}
-                        captionText={captionText}
-                      />
-                    </WithLink>
-                  );
-                }
-              )}
+              {heroLinks.map((link, index) => {
+                const iconName = get(link, 'iconName', '');
+                const iconSize = get(link, 'iconSize');
+                const iconColor = get(link, 'iconColor');
+                const captionSize = get(link, 'captionSize');
+                const captionText = get(link, 'captionText', '');
+                const href = get(link, 'href', '');
+
+                return (
+                  <WithLink
+                    noStyling
+                    theme={withLinkTheme}
+                    href={href}
+                    key={`hero-icon-${index}`}
+                  >
+                    <IconCaption
+                      theme={iconCaptionTheme}
+                      iconName={iconName}
+                      iconSize={iconSize}
+                      iconColor={iconColor}
+                      captionSize={captionSize}
+                      captionText={captionText}
+                    />
+                  </WithLink>
+                );
+              })}
             </div>
           </div>
           {/* Blurb */}

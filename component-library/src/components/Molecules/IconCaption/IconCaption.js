@@ -49,6 +49,7 @@ class IconCaption extends PureComponent<Props> {
       captionText,
       captionSize
     } = this.props;
+
     return (
       <div className={classNames(theme.iconCaption, extendStyle)}>
         <Icon
