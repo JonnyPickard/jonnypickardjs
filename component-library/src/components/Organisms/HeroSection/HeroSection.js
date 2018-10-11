@@ -112,11 +112,13 @@ class HeroSection extends PureComponent<Props> {
           <div className={heroSectionTitlesAndLinks}>
             {/* Title + Links */}
             <div className={heroSectionTitles}>
+              {/* Title */}
               <Heading
                 theme={headingTheme}
                 headingType="h1"
                 content={heroTitle}
               />
+              {/* Subtitle */}
               <Heading
                 theme={headingTheme}
                 headingType="h2"
