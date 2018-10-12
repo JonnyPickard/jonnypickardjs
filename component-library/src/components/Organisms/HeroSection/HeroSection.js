@@ -2,6 +2,7 @@
 
 import React, { PureComponent } from 'react';
 import classNames from 'classnames';
+import get from 'lodash.get';
 
 import {
   Image,
