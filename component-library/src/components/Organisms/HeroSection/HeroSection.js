@@ -86,6 +86,7 @@ class HeroSection extends PureComponent<Props> {
 
     const {
       heroSection,
+      heroSectionContainer,
       heroSectionProfilePhoto,
       heroSectionTitlesAndLinks,
       heroSectionTitles,
@@ -95,76 +96,78 @@ class HeroSection extends PureComponent<Props> {
 
     return (
       <div className={classNames(heroSection, extendStyle)}>
-        {/* Left Main Section - Image */}
-        <div className={heroSectionProfilePhoto}>
-          {/* Circular photo - Mobile Only */}
-          <ProfilePhoto
-            theme={profilePhotoTheme}
-            src={heroImageMobile.src}
-            alt={heroImage.alt}
-          />
-          {/* Standard Image - Desktop */}
-          <Image theme={imageTheme} src={heroImage.src} alt={heroImage.alt} />
-        </div>
-        {/* Right Main Section - Profile Info */}
-        <div>
-          {/* Profile Section */}
-          <div className={heroSectionTitlesAndLinks}>
-            {/* Title + Links */}
-            <div className={heroSectionTitles}>
-              {/* Title */}
-              <Heading
-                theme={headingTheme}
-                headingType="h1"
-                content={heroTitle}
-              />
-              {/* Subtitle */}
-              <Heading
-                theme={headingTheme}
-                headingType="h2"
-                content={heroSubtitle}
-              />
-            </div>
-            <div className={heroSectionLinks}>
-              {heroLinks.map(
-                (
-                  {
-                    iconName,
-                    iconSize,
-                    iconColor,
-                    captionSize,
-                    captionText,
-                    href
-                  },
-                  index
-                ) => {
-                  return (
-                    <WithLink
-                      noStyling
-                      theme={withLinkTheme}
-                      href={href}
-                      key={`hero-icon-${index}`}
-                    >
-                      <IconCaption
-                        theme={iconCaptionTheme}
-                        iconName={iconName}
-                        iconSize={iconSize}
-                        iconColor={iconColor}
-                        captionSize={captionSize}
-                        captionText={captionText}
-                      />
-                    </WithLink>
-                  );
-                }
-              )}
-            </div>
+        <div className={heroSectionContainer}>
+          {/* Left Main Section - Image */}
+          <div className={heroSectionProfilePhoto}>
+            {/* Circular photo - Mobile Only */}
+            <ProfilePhoto
+              theme={profilePhotoTheme}
+              src={heroImageMobile.src}
+              alt={heroImage.alt}
+            />
+            {/* Standard Image - Desktop */}
+            <Image theme={imageTheme} src={heroImage.src} alt={heroImage.alt} />
           </div>
-          {/* Blurb */}
-          <Text
-            theme={textTheme}
-            content={heroBlurb}
-            extendStyle={heroSectionBlurb}
-          />
+          {/* Right Main Section - Profile Info */}
+          <div>
+            {/* Profile Section */}
+            <div className={heroSectionTitlesAndLinks}>
+              {/* Title + Links */}
+              <div className={heroSectionTitles}>
+                {/* Title */}
+                <Heading
+                  theme={headingTheme}
+                  headingType="h1"
+                  content={heroTitle}
+                />
+                {/* Subtitle */}
+                <Heading
+                  theme={headingTheme}
+                  headingType="h2"
+                  content={heroSubtitle}
+                />
+              </div>
+              <div className={heroSectionLinks}>
+                {heroLinks.map(
+                  (
+                    {
+                      iconName,
+                      iconSize,
+                      iconColor,
+                      captionSize,
+                      captionText,
+                      href
+                    },
+                    index
+                  ) => {
+                    return (
+                      <WithLink
+                        noStyling
+                        theme={withLinkTheme}
+                        href={href}
+                        key={`hero-icon-${index}`}
+                      >
+                        <IconCaption
+                          theme={iconCaptionTheme}
+                          iconName={iconName}
+                          iconSize={iconSize}
+                          iconColor={iconColor}
+                          captionSize={captionSize}
+                          captionText={captionText}
+                        />
+                      </WithLink>
+                    );
+                  }
+                )}
+              </div>
+            </div>
+            {/* Blurb */}
+            <Text
+              theme={textTheme}
+              content={heroBlurb}
+              extendStyle={heroSectionBlurb}
+            />
+          </div>
         </div>
       </div>
     );

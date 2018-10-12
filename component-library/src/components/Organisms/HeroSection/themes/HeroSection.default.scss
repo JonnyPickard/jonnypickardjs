@@ -2,12 +2,23 @@
 
 .heroSection {
   display: flex;
-  flex-direction: column; 
+  justify-content: center;
 
-  max-width: 1440px;
-  
   @media #{$width-desktop} {
-    flex-direction: row;  
+    box-shadow: 0 2px 7px 0 $box-shadow-light;
+  }
+  
+  &Container {
+    display: flex;
+    flex-direction: column; 
+  
+    margin-bottom: 30px;
+    max-width: 1440px;
+    
+    @media #{$width-desktop} {
+      margin-bottom: 40px;
+      flex-direction: row;  
+    }
   }
 
   &ProfilePhoto {
