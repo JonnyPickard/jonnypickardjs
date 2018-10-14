@@ -39,7 +39,8 @@ class TableSimple extends PureComponent<Props> {
 
   static defaultProps = {
     cells: [],
-    tableKey: []
+    tableKey: [],
+    tableKeyTitle: ''
   };
 
   getClassSelectorForBGColor = (colorSelector: string): string => {
@@ -76,7 +77,7 @@ class TableSimple extends PureComponent<Props> {
               <Heading
                 theme={headingTheme}
                 headingType="h3"
-                content={get(cell, ['text'], '')}
+                content={tableKeyTitle}
               />
             </div>
           ))}

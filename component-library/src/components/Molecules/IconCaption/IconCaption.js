@@ -38,6 +38,8 @@ class IconCaption extends PureComponent<Props> {
     captionSize: 'h2',
     iconSize: 'md',
     noIcon: false,
+    iconName: '',
+    iconColor: '',
     iconBackgroundColor: '',
     iconBackgroundBorderRadius: false
   };
