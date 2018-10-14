@@ -29,3 +29,14 @@
 &linkedinBlue {
   @include pickColor($linkedin-blue);
 }
+
+/* Table BG Colors */
+&mintHeavy {
+  @include pickColor($mint-heavy);
+}
+&mintMedium {
+  @include pickColor($mint-medium);
+}
+&mintLight {
+  @include pickColor($mint-light);
+}

@@ -1,0 +1,9 @@
+{
+  "name": "TableKey Component",
+  "description": "Presentational",
+  "version": "0.0.0",
+  "main": "./TableKey.js",
+  "files": [
+    "./__themes__/TableKey.scss"
+  ]
+}

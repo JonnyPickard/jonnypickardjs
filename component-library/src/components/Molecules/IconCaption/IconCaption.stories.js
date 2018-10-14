@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { storiesOf } from '@storybook/react';
-import { withKnobs, select, text } from '@storybook/addon-knobs';
+import { withKnobs, select, text, boolean } from '@storybook/addon-knobs';
 import centered from '@storybook/addon-centered';
 
 import icons from 'assets/icons/icons.svg';
@@ -18,6 +18,12 @@ storiesOf('Molecules/IconCaption', module)
   .addDecorator(withKnobs)
   .add('default', () => {
     const color = select('Color', colors, 'linkedinBlue', 'Icon-01');
+    const iconBackgroundColor = select(
+      'Background Color',
+      colors,
+      '',
+      'Icon-01'
+    );
     const iconName = select(
       'Icon name',
       iconOptions,
@@ -31,12 +37,17 @@ storiesOf('Molecules/IconCaption', module)
       ['h2', 'h3', 'h4', 'h5', 'h6'],
       'h2'
     );
+    const noIcon = boolean('No Icon?', false);
+    const iconBackgroundBorderRadius = boolean('Icon BG Border Radius', false);
 
     return (
       <IconCaption
+        noIcon={noIcon}
+        iconBackgroundBorderRadius={iconBackgroundBorderRadius}
         captionText={captionText}
         captionSize={captionSize}
         iconColor={color}
+        iconBackgroundColor={iconBackgroundColor}
         iconName={iconName}
         iconSize={iconSize}
         theme={iconCaptionThemeDefault}

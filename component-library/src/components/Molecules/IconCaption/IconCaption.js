@@ -17,7 +17,11 @@ type Props = {
   },
   iconName: string,
   iconSize: iconSizeSelectors,
+  /** If you only want a colored block - useful for table keys */
+  noIcon: boolean,
   /** Enum types that map to the css color class selectors */
+  iconBackgroundColor: colorClassSelectors,
+  iconBackgroundBorderRadius: boolean,
   iconColor: colorClassSelectors,
   captionText: string,
   captionSize: headingTypeSelectors,
@@ -32,7 +36,10 @@ class IconCaption extends PureComponent<Props> {
 
   static defaultProps = {
     captionSize: 'h2',
-    iconSize: 'md'
+    iconSize: 'md',
+    noIcon: false,
+    iconBackgroundColor: '',
+    iconBackgroundBorderRadius: false
   };
 
   /**
@@ -45,17 +52,22 @@ class IconCaption extends PureComponent<Props> {
       extendStyle,
       iconName,
       iconColor,
+      iconBackgroundColor,
       iconSize,
       captionText,
+      noIcon,
+      iconBackgroundBorderRadius,
       captionSize
     } = this.props;
 
     return (
       <div className={classNames(theme.iconCaption, extendStyle)}>
         <Icon
-          iconName={iconName}
+          iconName={noIcon ? '' : iconName}
           iconSize={iconSize}
           color={iconColor}
+          backgroundColor={iconBackgroundColor}
+          backgroundBorderRadius={iconBackgroundBorderRadius}
           theme={iconThemeDefault}
         />
         <Heading

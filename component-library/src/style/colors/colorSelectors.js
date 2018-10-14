@@ -6,5 +6,8 @@ export default [
   'grayscaleColor5',
   'black',
   'white',
-  'linkedinBlue'
+  'linkedinBlue',
+  'mintHeavy',
+  'mintMedium',
+  'mintLight'
 ];
