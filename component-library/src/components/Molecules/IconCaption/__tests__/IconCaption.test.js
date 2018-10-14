@@ -16,4 +16,12 @@ describe('<IconCaption />', () => {
     expect(iconCaption).toHaveLength(1);
     expect(iconCaption.text()).toEqual(props.captionText);
   });
+
+  it('renders with noIcon', () => {
+    const wrapper = mount(
+      <IconCaption {...props} theme={iconCaptionTheme} noIcon />
+    );
+    const icon = wrapper.find('Icon');
+    expect(icon.props().iconName).toEqual('');
+  });
 });

@@ -1,0 +1,43 @@
+@import './colors.scss';
+
+/* Table BG Colors */
+&mintHeavy {
+  @include pickBackgroundColor($mint-heavy);
+}
+&mintMedium {
+  @include pickBackgroundColor($mint-medium);
+}
+&mintLight {
+  @include pickBackgroundColor($mint-light);
+}
+
+// Grayscale
+&grayscaleColor1 {
+  @include pickBackgroundColor($grayscale-palette-1);
+}
+&grayscaleColor2 {
+  @include pickBackgroundColor($grayscale-palette-2);
+}
+&grayscaleColor3 {
+  @include pickBackgroundColor($grayscale-palette-3);
+}
+&grayscaleColor4 {
+  @include pickBackgroundColor($grayscale-palette-4);
+}
+&grayscaleColor5 {
+  @include pickBackgroundColor($grayscale-palette-5);
+}
+
+// B / W
+&black {
+  @include pickBackgroundColor($black);
+}
+&white {
+  @include pickBackgroundColor($white);
+}
+
+// Custom
+&linkedinBlue {
+  @include pickBackgroundColor($linkedin-blue);
+}
+

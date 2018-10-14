@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { storiesOf } from '@storybook/react';
-import { withKnobs, select } from '@storybook/addon-knobs';
+import { withKnobs, select, boolean } from '@storybook/addon-knobs';
 import centered from '@storybook/addon-centered';
 
 import icons from 'assets/icons/icons.svg';
@@ -18,6 +18,13 @@ storiesOf('Atoms/Icon', module)
   .addDecorator(withKnobs)
   .add('default', () => {
     const color = select('Color', colors, 'grayscaleColor5', 'Icon-01');
+    const backgroundColor = select(
+      'Background Color',
+      colors,
+      'white',
+      'Icon-01'
+    );
+    const backgroundBorderRadius = boolean('Background Border Radius', false);
     const iconName = select(
       'Icon name',
       iconOptions,
@@ -29,6 +36,8 @@ storiesOf('Atoms/Icon', module)
     return (
       <Icon
         color={color}
+        backgroundColor={backgroundColor}
+        backgroundBorderRadius={backgroundBorderRadius}
         iconName={iconName}
         iconSize={iconSize}
         theme={iconThemeDefault}

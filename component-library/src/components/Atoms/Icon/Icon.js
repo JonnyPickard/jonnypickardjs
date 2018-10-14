@@ -15,6 +15,9 @@ type Props = {
   iconName: string,
   /** Enum types that map to the css color class selectors */
   color: colorClassSelectors,
+  backgroundColor: colorClassSelectors,
+  /** Have border radius on bg */
+  backgroundBorderRadius: boolean,
   iconSize: iconSizeSelectors,
   extendStyle?: Array<*> | string
 };
@@ -27,13 +30,21 @@ type Props = {
 class Icon extends PureComponent<Props> {
   static defaultProps = {
     color: 'black',
-    iconSize: 'md'
+    iconSize: 'md',
+    backgroundColor: '',
+    backgroundBorderRadius: false
   };
 
   getClassSelectorForColor = (): string => {
     const { color, theme } = this.props;
 
     return theme[`iconcolors${color}`];
+  };
+
+  getClassSelectorForBGColor = (): string => {
+    const { backgroundColor, theme } = this.props;
+
+    return theme[`iconbackgroundColors${backgroundColor}`];
   };
 
   getClassSelectorForSize = (): string => {
@@ -43,12 +54,14 @@ class Icon extends PureComponent<Props> {
   };
 
   render() {
-    const { theme, iconName, extendStyle } = this.props;
+    const { theme, iconName, extendStyle, backgroundBorderRadius } = this.props;
     return (
       <div
         className={classNames(
           theme.icon,
+          backgroundBorderRadius && theme.iconbackgroundBorderRadius,
           this.getClassSelectorForColor(),
+          this.getClassSelectorForBGColor(),
           this.getClassSelectorForSize(),
           extendStyle
         )}
