@@ -9,6 +9,6 @@ const props = {
   theme: tableSimpleThemeDefault
 };
 
-storiesOf('TableSimple', module)
+storiesOf('Organisms/TableSimple', module)
   .addDecorator(withKnobs)
   .add('default', () => <TableSimple {...props} />);

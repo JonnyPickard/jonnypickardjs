@@ -3,12 +3,18 @@
 import React, { PureComponent } from 'react';
 import classNames from 'classnames';
 
+import type { colorClassSelectors } from 'shared/flow-types/colorSelectorType.js';
+
 type Props = {
   /** CSS modules style object */
   theme: {
     [css_modules_class: string]: string
   },
-  extendStyle?: string
+  extendStyle?: string,
+  cells: {
+    backgroundColor: colorClassSelectors,
+    text: string
+  }
 };
 
 /**
