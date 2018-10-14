@@ -80,7 +80,14 @@ See [Atomic Design][0] by Brad Frost for more information.
   - [ ] - Main  
   - [ ] - ProjectDetail  
 
-### Future Ideas
+### Future Ideas/ Currently Working On
+
+- Sort out assets.
+- Find a better way to visualize tech used + Experience/ Usage Per Job.
+  - Table
+  - Pie/ Donut chart?
+- Find better way to visualize main capabalities. 
+  - Graphs? 
 
 * Animations? 
 * Sticky HOC
