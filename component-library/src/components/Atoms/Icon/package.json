@@ -7,7 +7,7 @@
     "./__themes__/Icon.default.scss"
   ],
   "peerDependencies": {
-    "react": "^16.2.0",
-    "classnames": "^2.2.5"
+    "classnames": "^2.2.5",
+    "react": "^16.2.0"
   }
 }
