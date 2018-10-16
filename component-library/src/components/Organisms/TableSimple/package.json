@@ -8,7 +8,8 @@
   ],
   "dependencies": {
     "@jonnypickardjs/iconcaption": "^0.0.0",
-    "@jonnypickardjs/heading": "^0.0.0"
+    "@jonnypickardjs/heading": "^0.0.0",
+    "@jonnypickardjs/theme": "^1.0.0"
   },
   "peerDependencies": {
     "react": "^16.2.0",

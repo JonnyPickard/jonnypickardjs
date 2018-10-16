@@ -6,6 +6,10 @@
   "files": [
     "./__themes__/Icon.default.scss"
   ],
+  "dependencies": {
+    "@jonnypickardjs/theme": "^1.0.0",
+    "@jonnypickardjs/assets": "^1.0.0"
+  },
   "peerDependencies": {
     "classnames": "^2.2.5",
     "react": "^16.2.0"

@@ -7,7 +7,8 @@
     "./__themes__/ProfilePhoto.default.scss"
   ],
   "dependencies": {
-    "@jonnypickardjs/image": "^0.0.0"
+    "@jonnypickardjs/image": "^0.0.0",
+    "@jonnypickardjs/theme": "^1.0.0"
   },
   "peerDependencies": {
     "react": "^16.2.0",

@@ -3,12 +3,12 @@
 import React, { PureComponent } from 'react';
 import classNames from 'classnames';
 
-import { Icon, iconThemeDefault } from 'src/components/Atoms/Icon';
-import { Heading, headingThemeDefault } from 'src/components/Atoms/Heading';
+import { Icon, iconThemeDefault } from '@jonnypickardjs/icon';
+import { Heading, headingThemeDefault } from '@jonnypickardjs/heading';
 
-import type { colorClassSelectors } from 'shared/flow-types/colorSelectorType.js';
-import type { iconSizeSelectors } from 'shared/flow-types/iconSizeSelectorType.js';
-import type { headingTypeSelectors } from 'shared/flow-types/headingTypeSelectorType.js';
+import type { colorClassSelectors } from '@jonnypickardjs/clib-shared/flow-types/colorSelectorType.js';
+import type { iconSizeSelectors } from '@jonnypickardjs/clib-shared/flow-types/iconSizeSelectorType.js';
+import type { headingTypeSelectors } from '@jonnypickardjs/clib-shared/flow-types/headingTypeSelectorType.js';
 
 type Props = {
   /** CSS modules style object */

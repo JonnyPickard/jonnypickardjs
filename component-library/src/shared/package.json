@@ -1,0 +1,10 @@
+{
+  "name": "@jonnypickardjs/clib-shared",
+  "version": "1.0.0",
+  "description": "Shared component library utils",
+  "author": "Jonny Pickard",
+  "license": "MIT",
+  "files": [
+    "*"
+  ]
+}

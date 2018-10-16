@@ -1,7 +1,7 @@
 const { uncapitalize } = require('./helpers');
 
 module.exports = componentName => `\
-@import 'src/style/variables.scss';
+@import '@jonnypickardjs/theme/variables.scss';
 
 // .${uncapitalize(componentName)} {}
 `;

@@ -7,8 +7,13 @@
     "./__themes__/HeroSection.default.scss"
   ],
   "dependencies": {
-    "react": "^16.2.0",
-    "classnames": "^2.2.5"
+    "@jonnypickardjs/image": "^0.0.0",
+    "@jonnypickardjs/heading": "^0.0.0",
+    "@jonnypickardjs/iconcaption": "^0.0.0",
+    "@jonnypickardjs/profilephoto": "^0.0.0",
+    "@jonnypickardjs/withlink": "^0.0.0",
+    "@jonnypickardjs/theme": "^1.0.0",
+    "@jonnypickardjs/clib-shared": "^1.0.0"
   },
   "peerDependencies": {
     "react": "^16.2.0",

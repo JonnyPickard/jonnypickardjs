@@ -1,0 +1,10 @@
+{
+  "name": "@jonnypickardjs/assets",
+  "version": "1.0.0",
+  "description": "jonnypickard.github.io assets",
+  "author": "Jonny Pickard",
+  "license": "MIT",
+  "files": [
+    "*"
+  ]
+}
