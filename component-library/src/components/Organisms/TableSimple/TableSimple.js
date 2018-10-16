@@ -7,11 +7,11 @@ import get from 'lodash.get';
 import {
   IconCaption,
   iconCaptionThemeDefault as iconCaptionTheme
-} from '@jonnypickardjs/Molecules/IconCaption';
+} from 'src/components/Molecules/IconCaption';
 import {
   Heading,
   headingThemeDefault as headingTheme
-} from '@jonnypickardjs/Atoms/Heading';
+} from 'src/components/Atoms/Heading';
 
 import type { colorClassSelectors } from 'shared/flow-types/colorSelectorType.js';
 

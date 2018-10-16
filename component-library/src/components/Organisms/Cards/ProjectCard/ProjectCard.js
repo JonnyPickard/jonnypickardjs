@@ -5,11 +5,11 @@ import classNames from 'classnames';
 import {
   Image,
   imageThemeDefault as imageTheme
-} from '@jonnypickardjs/Atoms/Image';
+} from 'src/components/Atoms/Image';
 import {
   Text,
   textThemeDefault as textTheme
-} from '@jonnypickardjs/Atoms/Text';
+} from 'src/components/Atoms/Text';
 
 type Props = {
   /** CSS modules style object */

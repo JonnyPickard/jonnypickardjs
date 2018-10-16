@@ -7,6 +7,9 @@
     "./__themes__/ProfilePhoto.default.scss"
   ],
   "dependencies": {
+    "@jonnypickardjs/image": "^1.0.0"
+  },
+  "peerDependencies": {
     "react": "^16.2.0",
     "classnames": "^2.2.5"
   }

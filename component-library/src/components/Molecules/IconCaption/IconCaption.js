@@ -3,8 +3,8 @@
 import React, { PureComponent } from 'react';
 import classNames from 'classnames';
 
-import { Icon, iconThemeDefault } from '@jonnypickardjs/Atoms/Icon';
-import { Heading, headingThemeDefault } from '@jonnypickardjs/Atoms/Heading';
+import { Icon, iconThemeDefault } from 'src/components/Atoms/Icon';
+import { Heading, headingThemeDefault } from 'src/components/Atoms/Heading';
 
 import type { colorClassSelectors } from 'shared/flow-types/colorSelectorType.js';
 import type { iconSizeSelectors } from 'shared/flow-types/iconSizeSelectorType.js';

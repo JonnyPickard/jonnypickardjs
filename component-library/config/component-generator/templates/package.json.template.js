@@ -7,7 +7,7 @@ module.exports = componentName => `\
   "files": [
     "./__themes__/${componentName}.default.scss"
   ],
-  "dependencies": {
+  "peerDependencies": {
     "react": "^16.2.0",
     "classnames": "^2.2.5"
   }

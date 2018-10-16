@@ -6,8 +6,8 @@
   "files": [
     "./__themes__/Divider.default.scss"
   ],
-  "dependencies": {
+  "peerDependencies": {
     "react": "^16.2.0",
     "classnames": "^2.2.5"
-  }
+  },
 }

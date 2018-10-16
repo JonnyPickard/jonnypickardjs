@@ -7,28 +7,28 @@ import get from 'lodash.get';
 import {
   Image,
   imageThemeDefault as imageTheme
-} from '@jonnypickardjs/Atoms/Image';
+} from 'src/components/Atoms/Image';
 import {
   Text,
   textThemeDefault as textTheme
-} from '@jonnypickardjs/Atoms/Text';
+} from 'src/components/Atoms/Text';
 import {
   Heading,
   headingThemeDefault as headingTheme
-} from '@jonnypickardjs/Atoms/Heading';
+} from 'src/components/Atoms/Heading';
 import {
   IconCaption,
   iconCaptionThemeDefault as iconCaptionTheme
-} from '@jonnypickardjs/Molecules/IconCaption';
+} from 'src/components/Molecules/IconCaption';
 import {
   ProfilePhoto,
   profilePhotoThemeDefault as profilePhotoTheme
-} from '@jonnypickardjs/Molecules/ProfilePhoto';
+} from 'src/components/Molecules/ProfilePhoto';
 
 import {
   WithLink,
   withLinkThemeDefault as withLinkTheme
-} from '@jonnypickardjs/HOC/WithLink';
+} from 'src/components/HOC/WithLink';
 
 import type { colorClassSelectors } from 'shared/flow-types/colorSelectorType.js';
 import type { iconSizeSelectors } from 'shared/flow-types/iconSizeSelectorType.js';

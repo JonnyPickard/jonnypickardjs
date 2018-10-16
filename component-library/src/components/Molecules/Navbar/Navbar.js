@@ -4,16 +4,16 @@ import React, { PureComponent } from 'react';
 import classNames from 'classnames';
 import get from 'lodash.get';
 
-import { Icon, iconThemeDefault } from '@jonnypickardjs/Atoms/Icon';
-import { Heading, headingThemeDefault } from '@jonnypickardjs/Atoms/Heading';
+import { Icon, iconThemeDefault } from 'src/components/Atoms/Icon';
+import { Heading, headingThemeDefault } from 'src/components/Atoms/Heading';
 import {
   ProfilePhoto,
   profilePhotoThemeDefault
-} from '@jonnypickardjs/Molecules/ProfilePhoto';
+} from 'src/components/Molecules/ProfilePhoto';
 import {
   WithLink,
   withLinkThemeDefault as withLinkTheme
-} from '@jonnypickardjs/HOC/WithLink';
+} from 'src/components/HOC/WithLink';
 
 import type { colorClassSelectors } from 'shared/flow-types/colorSelectorType.js';
 import type { iconSizeSelectors } from 'shared/flow-types/iconSizeSelectorType.js';
