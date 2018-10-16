@@ -1,0 +1,10 @@
+{
+  "name": "@jonnypickardjs/theme",
+  "version": "1.0.0",
+  "description": "jonnypickard.github.io theme",
+  "author": "Jonny Pickard",
+  "license": "MIT",
+  "files": [
+    "*"
+  ]
+}

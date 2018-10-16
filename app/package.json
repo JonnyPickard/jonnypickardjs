@@ -6,6 +6,9 @@
   "scripts": {
     "start:dev": "webpack-dev-server --config config/webpack.config.js"
   },
+  "dependencies": {
+    "@jonnypickardjs/divider": "^0.0.0"
+  },
   "devDependencies": {
     "autoprefixer": "^9.1.0",
     "babel-plugin-flow-react-proptypes": "^24.1.0",
