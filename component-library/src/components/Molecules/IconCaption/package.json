@@ -6,12 +6,12 @@
   "files": [
     "./__themes__/IconCaption.default.scss"
   ],
-  "peerDependencies": {
-    "react": "^16.2.0",
-    "classnames": "^2.2.5"
-  },
   "dependencies": {
     "@jonnypickardjs/icon": "0.0.0",
     "@jonnypickardjs/heading": "0.0.0"
+  },
+  "peerDependencies": {
+    "react": "^16.2.0",
+    "classnames": "^2.2.5"
   }
 }

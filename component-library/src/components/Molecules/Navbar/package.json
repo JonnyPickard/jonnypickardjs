@@ -7,8 +7,10 @@
     "./__themes__/Navbar.default.scss"
   ],
   "dependencies": {
-    "react": "^16.2.0",
-    "classnames": "^2.2.5"
+    "@jonnypickardjs/icon": "^0.0.0",
+    "@jonnypickardjs/heading": "^0.0.0",
+    "@jonnypickardjs/profilephoto": "^0.0.0",
+    "@jonnypickardjs/withlink": "^0.0.0"
   },
   "peerDependencies": {
     "react": "^16.2.0",

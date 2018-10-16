@@ -6,10 +6,7 @@ import {
   Image,
   imageThemeDefault as imageTheme
 } from 'src/components/Atoms/Image';
-import {
-  Text,
-  textThemeDefault as textTheme
-} from 'src/components/Atoms/Text';
+import { Text, textThemeDefault as textTheme } from 'src/components/Atoms/Text';
 
 type Props = {
   /** CSS modules style object */

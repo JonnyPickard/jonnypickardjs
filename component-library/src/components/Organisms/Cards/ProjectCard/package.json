@@ -6,6 +6,10 @@
   "files": [
     "./__themes__/ProjectCard.default.scss"
   ],
+  "dependencies": {
+    "@jonnypickardjs/image": "^0.0.0",
+    "@jonnypickardjs/text": "^0.0.0"
+  },
   "peerDependencies": {
     "react": "^16.2.0",
     "classnames": "^2.2.5"
