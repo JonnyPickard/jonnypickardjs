@@ -1,0 +1,11 @@
+{
+  "name": "@jonnypickardjs/content",
+  "version": "1.0.0",
+  "description": "The content for jonnypickard.github.io as JSON files",
+  "main": "index.js",
+  "author": "Jonny Pickard",
+  "license": "MIT",
+  "files": [
+    "*"
+  ]
+}

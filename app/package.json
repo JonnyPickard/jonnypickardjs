@@ -12,7 +12,8 @@
     "@jonnypickardjs/heading": "^0.0.0",
     "@jonnypickardjs/icon": "^0.0.0",
     "@jonnypickardjs/image": "^0.0.0",
-    "@jonnypickardjs/text": "^0.0.0"
+    "@jonnypickardjs/text": "^0.0.0",
+    "@jonnypickardjs/content": "^1.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^9.1.0",

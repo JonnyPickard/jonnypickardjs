@@ -22,6 +22,7 @@
     "component-library/src/components/Atoms/*",
     "component-library/src/components/Molecules/*",
     "component-library/src/components/Organisms/*",
+    "content",
     "app"
   ],
   "devDependencies": {
