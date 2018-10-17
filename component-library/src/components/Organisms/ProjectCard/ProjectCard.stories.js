@@ -15,7 +15,7 @@ const props = {
   }
 };
 
-storiesOf('Organisms/Card/ProjectCard', module)
+storiesOf('Organisms/ProjectCard', module)
   .addDecorator(withKnobs)
   .addDecorator(centered)
   .add('default', () => (
