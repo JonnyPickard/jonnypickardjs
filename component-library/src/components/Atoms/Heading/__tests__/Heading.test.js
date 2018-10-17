@@ -11,7 +11,7 @@ const props = {
 
 describe('<Heading />', () => {
   it('renders succesfully', () => {
-    const wrapper = mount(<Heading {...props} />);
+    const wrapper = mount(<Heading headingType="h1" {...props} />);
     expect(wrapper.find('Heading')).toHaveLength(1);
   });
 
