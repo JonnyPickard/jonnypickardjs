@@ -2,14 +2,8 @@
 
 import React, { PureComponent } from 'react';
 import classNames from 'classnames';
-import {
-  Image,
-  imageThemeDefault as imageTheme
-} from '@jonnypickardjs/Atoms/Image';
-import {
-  Text,
-  textThemeDefault as textTheme
-} from '@jonnypickardjs/Atoms/Text';
+import { Image, imageThemeDefault as imageTheme } from '@jonnypickardjs/image';
+import { Text, textThemeDefault as textTheme } from '@jonnypickardjs/text';
 
 type Props = {
   /** CSS modules style object */

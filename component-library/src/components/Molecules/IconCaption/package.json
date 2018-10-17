@@ -7,6 +7,11 @@
     "./__themes__/IconCaption.default.scss"
   ],
   "dependencies": {
+    "@jonnypickardjs/icon": "0.0.0",
+    "@jonnypickardjs/heading": "0.0.0",
+    "@jonnypickardjs/theme": "^1.0.0"
+  },
+  "peerDependencies": {
     "react": "^16.2.0",
     "classnames": "^2.2.5"
   }

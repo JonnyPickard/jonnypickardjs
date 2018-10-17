@@ -15,6 +15,14 @@
   },
   "workspaces": [
     "component-library",
+    "component-library/src/assets",
+    "component-library/src/style",
+    "component-library/src/shared",
+    "component-library/src/components/HOC/*",
+    "component-library/src/components/Atoms/*",
+    "component-library/src/components/Molecules/*",
+    "component-library/src/components/Organisms/*",
+    "content",
     "app"
   ],
   "devDependencies": {

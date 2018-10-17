@@ -7,11 +7,11 @@ import get from 'lodash.get';
 import {
   IconCaption,
   iconCaptionThemeDefault as iconCaptionTheme
-} from '@jonnypickardjs/Molecules/IconCaption';
+} from 'src/components/Molecules/IconCaption';
 import {
   Heading,
   headingThemeDefault as headingTheme
-} from '@jonnypickardjs/Atoms/Heading';
+} from 'src/components/Atoms/Heading';
 
 import type { colorClassSelectors } from 'shared/flow-types/colorSelectorType.js';
 
@@ -22,7 +22,7 @@ type Props = {
   },
   extendStyle?: string,
   cells: Array<{
-    backgroundColor: colorClassSelectors,
+    color: colorClassSelectors,
     text: string
   }>,
   tableKey: Array<{
@@ -77,7 +77,7 @@ class TableSimple extends PureComponent<Props> {
               <Heading
                 theme={headingTheme}
                 headingType="h3"
-                content={tableKeyTitle}
+                content={get(cell, ['text'], '')}
               />
             </div>
           ))}

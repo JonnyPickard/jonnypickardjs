@@ -4,20 +4,20 @@ import React, { PureComponent } from 'react';
 import classNames from 'classnames';
 import get from 'lodash.get';
 
-import { Icon, iconThemeDefault } from '@jonnypickardjs/Atoms/Icon';
-import { Heading, headingThemeDefault } from '@jonnypickardjs/Atoms/Heading';
+import { Icon, iconThemeDefault } from '@jonnypickardjs/icon';
+import { Heading, headingThemeDefault } from '@jonnypickardjs/heading';
 import {
   ProfilePhoto,
   profilePhotoThemeDefault
-} from '@jonnypickardjs/Molecules/ProfilePhoto';
+} from '@jonnypickardjs/profilephoto';
 import {
   WithLink,
   withLinkThemeDefault as withLinkTheme
-} from '@jonnypickardjs/HOC/WithLink';
+} from '@jonnypickardjs/withlink';
 
-import type { colorClassSelectors } from 'shared/flow-types/colorSelectorType.js';
-import type { iconSizeSelectors } from 'shared/flow-types/iconSizeSelectorType.js';
-import type { headingTypeSelectors } from 'shared/flow-types/headingTypeSelectorType.js';
+import type { colorClassSelectors } from '@jonnypickardjs/clib-shared/flow-types/colorSelectorType.js';
+import type { iconSizeSelectors } from '@jonnypickardjs/clib-shared/flow-types/iconSizeSelectorType.js';
+import type { headingTypeSelectors } from '@jonnypickardjs/clib-shared/flow-types/headingTypeSelectorType.js';
 
 type Props = {
   /** CSS modules style object */

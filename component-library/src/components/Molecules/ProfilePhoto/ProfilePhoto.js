@@ -3,7 +3,7 @@
 import React, { PureComponent } from 'react';
 import classNames from 'classnames';
 
-import { Image } from '@jonnypickardjs/Atoms/Image';
+import { Image } from '@jonnypickardjs/image';
 
 type Props = {
   /** CSS modules style object */

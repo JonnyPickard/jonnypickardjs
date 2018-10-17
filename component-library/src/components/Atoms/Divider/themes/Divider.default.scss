@@ -1,4 +1,4 @@
-@import 'src/style/variables.scss';
+@import '@jonnypickardjs/theme/variables.scss';
 
 @mixin pickColor($dividerColor) {
   background-color: $dividerColor
@@ -32,6 +32,6 @@
     }
   }
   &colors {
-    @import 'src/style/colors/_pickColor.scss';
+    @import '@jonnypickardjs/theme/colors/_pickColor.scss';
   }
 }

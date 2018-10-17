@@ -4,35 +4,29 @@ import React, { PureComponent } from 'react';
 import classNames from 'classnames';
 import get from 'lodash.get';
 
-import {
-  Image,
-  imageThemeDefault as imageTheme
-} from '@jonnypickardjs/Atoms/Image';
-import {
-  Text,
-  textThemeDefault as textTheme
-} from '@jonnypickardjs/Atoms/Text';
+import { Image, imageThemeDefault as imageTheme } from '@jonnypickardjs/image';
+import { Text, textThemeDefault as textTheme } from '@jonnypickardjs/text';
 import {
   Heading,
   headingThemeDefault as headingTheme
-} from '@jonnypickardjs/Atoms/Heading';
+} from '@jonnypickardjs/heading';
 import {
   IconCaption,
   iconCaptionThemeDefault as iconCaptionTheme
-} from '@jonnypickardjs/Molecules/IconCaption';
+} from '@jonnypickardjs/iconcaption';
 import {
   ProfilePhoto,
   profilePhotoThemeDefault as profilePhotoTheme
-} from '@jonnypickardjs/Molecules/ProfilePhoto';
+} from '@jonnypickardjs/profilephoto';
 
 import {
   WithLink,
   withLinkThemeDefault as withLinkTheme
-} from '@jonnypickardjs/HOC/WithLink';
+} from '@jonnypickardjs/withlink';
 
-import type { colorClassSelectors } from 'shared/flow-types/colorSelectorType.js';
-import type { iconSizeSelectors } from 'shared/flow-types/iconSizeSelectorType.js';
-import type { headingTypeSelectors } from 'shared/flow-types/headingTypeSelectorType.js';
+import type { colorClassSelectors } from '@jonnypickardjs/clib-shared/flow-types/colorSelectorType.js';
+import type { iconSizeSelectors } from '@jonnypickardjs/clib-shared/flow-types/iconSizeSelectorType.js';
+import type { headingTypeSelectors } from '@jonnypickardjs/clib-shared/flow-types/headingTypeSelectorType.js';
 
 type Props = {
   /** CSS modules style object */
@@ -68,6 +62,10 @@ type Props = {
  */
 class HeroSection extends PureComponent<Props> {
   static displayName = 'HeroSection';
+
+  static defaultProps = {
+    heroLinks: []
+  };
 
   /**
    * Render

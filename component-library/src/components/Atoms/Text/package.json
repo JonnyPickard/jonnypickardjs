@@ -7,6 +7,9 @@
     "./__themes__/Text.default.scss"
   ],
   "dependencies": {
+    "@jonnypickardjs/theme": "^1.0.0"
+  },
+  "peerDependencies": {
     "react": "^16.2.0",
     "classnames": "^2.2.5"
   }
