@@ -22,7 +22,7 @@ type Props = {
   },
   extendStyle?: string,
   cells: Array<{
-    backgroundColor: colorClassSelectors,
+    color: colorClassSelectors,
     text: string
   }>,
   tableKey: Array<{
@@ -77,7 +77,7 @@ class TableSimple extends PureComponent<Props> {
               <Heading
                 theme={headingTheme}
                 headingType="h3"
-                content={tableKeyTitle}
+                content={get(cell, ['text'], '')}
               />
             </div>
           ))}
