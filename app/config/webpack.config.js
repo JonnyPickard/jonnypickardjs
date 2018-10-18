@@ -1,8 +1,10 @@
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
+const { NODE_ENV = 'development' } = process.env;
+
 module.exports = {
-  mode: 'development',
+  mode: NODE_ENV,
   entry: './src/client',
   output: {
     path: path.resolve(__dirname, '../dist'),

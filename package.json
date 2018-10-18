@@ -14,7 +14,7 @@
     "test-components:coverage": "yarn wsrun test-coverage @jonnypickardjs/component-library",
     "REACT_APPLICATION": "",
     "start": "yarn wsrun start @jonnypickardjs/app",
-    "bundle": "yarn wsrun bundle @jonnypickardjs/app"
+    "bundle": "yarn && yarn wsrun bundle @jonnypickardjs/app"
   },
   "workspaces": [
     "app",
