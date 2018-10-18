@@ -288,6 +288,17 @@ eval("exports = module.exports = __webpack_require__(/*! ../../app/node_modules/
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!../node_modules/sass-loader/lib/loader.js!./src/client/client.scss":
+/*!**********************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!../node_modules/sass-loader/lib/loader.js!./src/client/client.scss ***!
+  \**********************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\nexports.push([module.i, \"@import url(https://fonts.googleapis.com/css?family=Dosis:300,400);\", \"\"]);\n\n// module\nexports.push([module.i, \"body {\\n  font-family: 'Dosis', sans-serif; }\\n\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./src/client/client.scss?./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!../node_modules/sass-loader/lib/loader.js");
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!../node_modules/sass-loader/lib/loader.js!./src/components/App/App.scss":
 /*!***************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!../node_modules/sass-loader/lib/loader.js!./src/components/App/App.scss ***!
@@ -295,7 +306,7 @@ eval("exports = module.exports = __webpack_require__(/*! ../../app/node_modules/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\nexports.i(__webpack_require__(/*! -!../../../node_modules/css-loader??ref--6-1!../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/modern-normalize/modern-normalize.css */ \"./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!../node_modules/sass-loader/lib/loader.js!../node_modules/modern-normalize/modern-normalize.css\"), \"\");\n\n// module\nexports.push([module.i, \"\\n\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./src/components/App/App.scss?./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!../node_modules/sass-loader/lib/loader.js");
+eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \"\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./src/components/App/App.scss?./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!../node_modules/sass-loader/lib/loader.js");
 
 /***/ }),
 
@@ -356,6 +367,17 @@ eval("\n/**\n * When source maps are enabled, `style-loader` uses a link element
 
 /***/ }),
 
+/***/ "./src/client/client.scss":
+/*!********************************!*\
+  !*** ./src/client/client.scss ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\nvar content = __webpack_require__(/*! !../../node_modules/css-loader??ref--6-1!../../node_modules/postcss-loader/src??ref--6-2!../../../node_modules/sass-loader/lib/loader.js!./client.scss */ \"./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!../node_modules/sass-loader/lib/loader.js!./src/client/client.scss\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/client/client.scss?");
+
+/***/ }),
+
 /***/ "./src/client/index.js":
 /*!*****************************!*\
   !*** ./src/client/index.js ***!
@@ -364,7 +386,7 @@ eval("\n/**\n * When source maps are enabled, `style-loader` uses a link element
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\n__webpack_require__(/*! modern-normalize/modern-normalize.css */ \"../node_modules/modern-normalize/modern-normalize.css\");\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactDom = __webpack_require__(/*! react-dom */ \"../node_modules/react-dom/index.js\");\n\nvar _App = __webpack_require__(/*! App */ \"./src/components/App/index.js\");\n\nvar _App2 = _interopRequireDefault(_App);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n(0, _reactDom.render)(_react2.default.createElement(_App2.default, null), document.getElementById('root'));\n\n//# sourceURL=webpack:///./src/client/index.js?");
+eval("\n\n__webpack_require__(/*! modern-normalize/modern-normalize.css */ \"../node_modules/modern-normalize/modern-normalize.css\");\n\n__webpack_require__(/*! ./client.scss */ \"./src/client/client.scss\");\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactDom = __webpack_require__(/*! react-dom */ \"../node_modules/react-dom/index.js\");\n\nvar _App = __webpack_require__(/*! App */ \"./src/components/App/index.js\");\n\nvar _App2 = _interopRequireDefault(_App);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n(0, _reactDom.render)(_react2.default.createElement(_App2.default, null), document.getElementById('root'));\n\n//# sourceURL=webpack:///./src/client/index.js?");
 
 /***/ }),
 

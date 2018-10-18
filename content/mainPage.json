@@ -12,7 +12,7 @@
     "heroSubtitle": "Software Engineer",
     "heroLinks": [
       {
-        "iconName": "static/media/icons.59b0049d.svg#social-linkedin",
+        "iconName": "social-linkedin",
         "iconSize": "md",
         "iconColor": "linkedinBlue",
         "captionSize": "h2",
@@ -20,7 +20,7 @@
         "href": "https://www.linkedin.com/in/jonny-pickard-715049b6/"
       },
       {
-        "iconName": "static/media/icons.59b0049d.svg#social-github",
+        "iconName": "social-github",
         "iconSize": "md",
         "iconColor": "black",
         "captionSize": "h2",
@@ -28,5 +28,6 @@
         "href": "https://github.com/JonnyPickard"
       }
     ]
-  }
+  },
+  "heroBlurb": "Passionate and successful London based software engineer, with a reputation for creative problem-solving. Key work priorities include achieving work of a high standard that is highly maintainable and scalable. Consistently seeking challenging new roles that encourage both personal and professional growth."
 }
