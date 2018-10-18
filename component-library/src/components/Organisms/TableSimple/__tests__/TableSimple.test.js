@@ -6,15 +6,15 @@ const props = {
   cells: [
     {
       text: 'Javascript',
-      backgroundColor: 'mintHeavy'
+      color: 'mintHeavy'
     },
     {
       text: 'React',
-      backgroundColor: 'mintMedium'
+      color: 'mintMedium'
     },
     {
       text: 'Flow Types',
-      backgroundColor: 'mintLight'
+      color: 'mintLight'
     }
   ],
   tableKey: [
