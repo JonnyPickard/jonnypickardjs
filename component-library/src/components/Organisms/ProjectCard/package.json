@@ -12,7 +12,7 @@
     "@jonnypickardjs/theme": "^1.0.0"
   },
   "peerDependencies": {
-    "classnames": "^2.2.6",
-    "react": "^16.4.2"
+    "classnames": "2.2.6",
+    "react": "16.4.2"
   }
 }

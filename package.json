@@ -29,5 +29,9 @@
   ],
   "devDependencies": {
     "wsrun": "^2.2.1"
+  },
+  "dependencies": {
+    "classnames": "2.2.6",
+    "react": "16.4.2"
   }
 }
