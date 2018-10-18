@@ -2,7 +2,6 @@
   "name": "jonnypickard.github.io",
   "version": "1.0.0",
   "description": "Portfolio website",
-  "main": "index.js",
   "repository": "git@github.com:JonnyPickard/JonnyPickard.github.io.git",
   "author": "Jonny Pickard <jonathandpickard@gmail.com>",
   "license": "MIT",
@@ -11,21 +10,28 @@
     "COMPONENT_LIBRARY": "",
     "start-storybook": "yarn wsrun start @jonnypickardjs/component-library",
     "test-components": "yarn wsrun test @jonnypickardjs/component-library",
-    "test-components:coverage": "yarn wsrun test-coverage @jonnypickardjs/component-library"
+    "test-components:coverage": "yarn wsrun test-coverage @jonnypickardjs/component-library",
+    "REACT_APPLICATION": "",
+    "start": "yarn wsrun start @jonnypickardjs/app",
+    "bundle": "yarn && yarn wsrun bundle @jonnypickardjs/app"
   },
   "workspaces": [
+    "app",
     "component-library",
+    "content",
     "component-library/src/assets",
     "component-library/src/style",
     "component-library/src/shared",
     "component-library/src/components/HOC/*",
     "component-library/src/components/Atoms/*",
     "component-library/src/components/Molecules/*",
-    "component-library/src/components/Organisms/*",
-    "content",
-    "app"
+    "component-library/src/components/Organisms/*"
   ],
   "devDependencies": {
     "wsrun": "^2.2.1"
+  },
+  "dependencies": {
+    "classnames": "2.2.6",
+    "react": "16.4.2"
   }
 }

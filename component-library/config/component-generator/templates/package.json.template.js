@@ -8,8 +8,8 @@ module.exports = componentName => `\
     "./__themes__/${componentName}.default.scss"
   ],
   "peerDependencies": {
-    "react": "^16.2.0",
-    "classnames": "^2.2.5"
+    "classnames": "2.2.6",
+    "react": "16.4.2"
   }
 }
 `;
