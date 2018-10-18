@@ -70,5 +70,8 @@ module.exports = {
       inject: true,
       template: path.resolve(__dirname, '../public/index.html')
     })
-  ]
+  ],
+  devServer: {
+    historyApiFallback: true
+  }
 };
