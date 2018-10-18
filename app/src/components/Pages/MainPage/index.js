@@ -2,6 +2,8 @@
 
 import React, { Component } from 'react';
 
+import { Link } from 'react-router-dom';
+
 import content from '@jonnypickardjs/content';
 
 import './MainPage.scss';
@@ -14,6 +16,7 @@ class MainPage extends Component<*, *> {
     return (
       <div>
         <h1>Hello From MainPage</h1>
+        <Link to="/projects/testProject1">Test Project</Link>
       </div>
     );
   }
