@@ -24,7 +24,7 @@
     text-align: center;
     margin: 1px;
     width: 100%;
-    @media #{$width-desktop} {
+    @media #{$width-tablet} {
       width: 200px; 
     }
   }

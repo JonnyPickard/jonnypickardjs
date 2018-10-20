@@ -2,7 +2,6 @@
 
 import React, { PureComponent } from 'react';
 import classNames from 'classnames';
-import get from 'lodash.get';
 
 import { Image, imageThemeDefault as imageTheme } from '@jonnypickardjs/image';
 import { Text, textThemeDefault as textTheme } from '@jonnypickardjs/text';
