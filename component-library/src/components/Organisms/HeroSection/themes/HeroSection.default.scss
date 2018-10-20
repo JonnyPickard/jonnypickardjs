@@ -10,9 +10,9 @@
   
   &Container {
     display: flex;
+    
+    margin: 10px 10px 30px 10px;
     flex-direction: column; 
-  
-    margin-bottom: 30px;
     max-width: 1440px;
     
     @media #{$width-desktop} {
