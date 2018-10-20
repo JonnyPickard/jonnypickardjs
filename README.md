@@ -11,6 +11,12 @@ Portfolio Website
   <img src="./docs/designs/homepage-desktop-and-mobile.png" alt="Homepage Desktop & Mobile">
 </p>
 
+### Homepage Tablet Hero Variation
+
+<p align="center" style="background: white;">
+  <img src="./docs/designs/homepage-tablet-hero-variation.png" alt="Homepage Desktop & Mobile">
+</p>
+
 ### Project Detail Pages
 
 <p align="center" style="background: white;">
