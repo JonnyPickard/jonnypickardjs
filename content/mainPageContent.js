@@ -1,5 +1,6 @@
 import icons from '@jonnypickardjs/assets/icons/icons.svg';
 import profilePictureDesktop from '@jonnypickardjs/assets/images/profile-picture.png';
+import profilePictureMobile from '@jonnypickardjs/assets/images/profile-picture-square-aspect-ratio.png';
 
 const mainPageContent = {
   heroSectionProps: {
@@ -8,7 +9,7 @@ const mainPageContent = {
       alt: 'Profile Image'
     },
     heroImageMobile: {
-      src: 'http://via.placeholder.com/200x200',
+      src: profilePictureMobile,
       alt: 'Profile Image'
     },
     heroTitle: 'Jonny Pickard',
