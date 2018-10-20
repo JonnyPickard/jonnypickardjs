@@ -1,7 +1,9 @@
 import mainPageContent from './mainPageContent';
+import navbarContent from './navbarContent';
 
 const contentStore = {
-  mainPageContent
+  mainPageContent,
+  navbarContent
 };
 
 export default contentStore;

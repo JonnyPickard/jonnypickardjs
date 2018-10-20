@@ -8,10 +8,11 @@ import {
   HeroSection,
   heroSectionThemeDefault
 } from '@jonnypickardjs/herosection';
+import { Navbar, navbarThemeDefault } from '@jonnypickardjs/navbar';
 
 import content from '@jonnypickardjs/content';
 
-import './MainPage.scss';
+import styles from './MainPage.scss';
 
 /**
  * <MainPage /> component.
@@ -19,14 +20,16 @@ import './MainPage.scss';
 class MainPage extends Component<*, *> {
   render(): Element<*> {
     const {
-      mainPageContent: { heroSectionProps }
+      mainPageContent: { heroSectionProps },
+      navbarContent: { navbarProps }
     } = content;
 
     return (
-      <Fragment>
+      <div className={styles.mainPage}>
+        <Navbar theme={navbarThemeDefault} {...navbarProps} />
         <HeroSection theme={heroSectionThemeDefault} {...heroSectionProps} />
         <Link to="/projects/testProject1">Test Project</Link>
-      </Fragment>
+      </div>
     );
   }
 }
