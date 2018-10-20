@@ -1,9 +1,10 @@
 import icons from '@jonnypickardjs/assets/icons/icons.svg';
+import profilePictureDesktop from '@jonnypickardjs/assets/images/profile-picture.png';
 
 const mainPageContent = {
   heroSectionProps: {
     heroImage: {
-      src: 'http://via.placeholder.com/140x200',
+      src: profilePictureDesktop,
       alt: 'Profile Image'
     },
     heroImageMobile: {

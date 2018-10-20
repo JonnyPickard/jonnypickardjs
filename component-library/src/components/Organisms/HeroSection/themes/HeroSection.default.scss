@@ -41,7 +41,10 @@
     @media #{$width-desktop} {
       margin: 0 40px 0 0;
       > img {
+        box-shadow: 0 2px 7px 0 $box-shadow-light;
         display: block;
+        width: 140px;
+        height: 200px;
       }
     }
   }
