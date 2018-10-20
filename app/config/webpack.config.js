@@ -46,7 +46,7 @@ module.exports = {
               importLoaders: 2, // Loaders before this
               modules: true, // Use css modules
               camelCase: 'dashes',
-              localIdentName: '[name]-[hash:4]' // TODO: remove [name] for prod
+              localIdentName: '[local]-[hash:4]' // TODO: remove [local] for prod
             }
           },
           {

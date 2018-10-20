@@ -17,6 +17,7 @@
     "@jonnypickardjs/icon": "^0.0.0",
     "@jonnypickardjs/image": "^0.0.0",
     "@jonnypickardjs/text": "^0.0.0",
+    "@jonnypickardjs/herosection": "^0.0.0",
     "classnames": "2.2.6",
     "modern-normalize": "^0.5.0",
     "react": "16.4.2",

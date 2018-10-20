@@ -1,8 +1,13 @@
 // @flow
 
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 
 import { Link } from 'react-router-dom';
+
+import {
+  HeroSection,
+  heroSectionThemeDefault
+} from '@jonnypickardjs/herosection';
 
 import content from '@jonnypickardjs/content';
 
@@ -13,11 +18,15 @@ import './MainPage.scss';
  */
 class MainPage extends Component<*, *> {
   render(): Element<*> {
+    const {
+      mainPageContent: { heroSectionProps }
+    } = content;
+
     return (
-      <div>
-        <h1>Hello From MainPage</h1>
+      <Fragment>
+        <HeroSection theme={heroSectionThemeDefault} {...heroSectionProps} />
         <Link to="/projects/testProject1">Test Project</Link>
-      </div>
+      </Fragment>
     );
   }
 }

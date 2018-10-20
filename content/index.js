@@ -1,4 +1,4 @@
-import mainPageContent from './mainPage';
+import mainPageContent from './mainPageContent';
 
 const contentStore = {
   mainPageContent

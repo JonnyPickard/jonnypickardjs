@@ -16,7 +16,7 @@
     max-width: 1440px;
     
     @media #{$width-desktop} {
-      margin-bottom: 40px;
+      margin: 20px 10px 40px;
       flex-direction: row;  
     }
   }

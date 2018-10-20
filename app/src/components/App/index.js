@@ -9,7 +9,7 @@ import ProjectDetailPage from '../Pages/ProjectDetailPage';
 
 import content from '@jonnypickardjs/content';
 
-import './App.scss';
+import styles from './App.scss';
 
 /**
  * <App /> component.
@@ -17,7 +17,7 @@ import './App.scss';
 class App extends Component<*, *> {
   render(): Element<*> {
     return (
-      <div>
+      <div className={styles.appContainer}>
         <Switch>
           <Route exact path="/" component={MainPage} />,
           <Route path="/projects/:title" component={ProjectDetailPage} />

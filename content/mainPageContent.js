@@ -1,5 +1,7 @@
+import icons from '@jonnypickardjs/assets/icons/icons.svg';
+
 const mainPageContent = {
-  heroSection: {
+  heroSectionProps: {
     heroImage: {
       src: 'http://via.placeholder.com/140x200',
       alt: 'Profile Image'
@@ -12,7 +14,7 @@ const mainPageContent = {
     heroSubtitle: 'Software Engineer',
     heroLinks: [
       {
-        iconName: 'social-linkedin',
+        iconName: `${icons}#social-linkedin`,
         iconSize: 'md',
         iconColor: 'linkedinBlue',
         captionSize: 'h2',
@@ -20,7 +22,7 @@ const mainPageContent = {
         href: 'https://www.linkedin.com/in/jonny-pickard-715049b6/'
       },
       {
-        iconName: 'social-github',
+        iconName: `${icons}#social-github`,
         iconSize: 'md',
         iconColor: 'black',
         captionSize: 'h2',
