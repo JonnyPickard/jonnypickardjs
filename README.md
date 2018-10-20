@@ -97,14 +97,26 @@ See [Atomic Design][0] by Brad Frost for more information.
   - [ ] - Main  
   - [ ] - ProjectDetail  
 
-### Future Ideas/ Currently Working On
+### Currently Working On
 
-- Sort out assets.
+Top priority:
+- Better bundle + deployment process - username.github.io websites can only be hosted from a master branch
+  - Currently assets are not being linked to correctly. 
+  - Therefor I will have to setup a few new branches. E.g. Develop & Release branches.
+  - Master should be clean apart from the static assets + docs/ README
+- Hero Section part 2 
+  -  Setup App testing
+  -  Sticky navbar/ solution for navbar on page change etc
+  -  Viewport Size detection HOC
+
+Lower priority
 - Find a better way to visualize tech used + Experience/ Usage Per Job.
   - Table
   - Pie/ Donut chart?
 - Find a better way to visualize main capabilities. 
   - Graphs? 
+
+### Future Ideas
 
 * Animations? 
 * Sticky HOC
