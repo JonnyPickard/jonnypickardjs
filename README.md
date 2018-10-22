@@ -2,6 +2,8 @@
 
 Portfolio Website
 
+> NOTE: I was testing out a variety of bundling + publishing options but having read the [Github Status](https://status.github.com/messages) page it turns out they are currently having issues with background processes including publishing new pages. I will therefore likely rollback a few current changes and work out an optimised publishing solution when the services are back up and running.
+
 
 ## Designs
 
