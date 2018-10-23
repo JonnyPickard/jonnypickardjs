@@ -11,7 +11,7 @@ addDecorator(
 
 setOptions({
   name: "Jonny's Components",
-  url: 'https://github.com/jonnypickard.github.io',
+  url: 'https://github.com/jonnypickard/jonnypickard.github.io',
   goFullScreen: false,
   showStoriesPanel: true,
   addonPanelInRight: false
