@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "bundle": "NODE_ENV=production rm -rf ./dist && webpack --config config/webpack.config.js",
+    "bundle": "NODE_ENV=production webpack --config config/webpack.config.js",
     "start": "yarn && run-p start-devserver open-app",
     "start-devserver": "webpack-dev-server --config config/webpack.config.js",
     "open-app": "open -a \"Google Chrome\" http://localhost:8080"

@@ -7,7 +7,7 @@ module.exports = {
   mode: NODE_ENV,
   entry: './src/client',
   output: {
-    path: path.resolve(__dirname, '../../'),
+    path: path.resolve(__dirname, '../build'),
     filename: 'bundle.js'
   },
   resolve: {

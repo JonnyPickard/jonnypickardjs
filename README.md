@@ -2,8 +2,12 @@
 
 Portfolio Website
 
-> NOTE: I was testing out a variety of bundling + publishing options but having read the [Github Status](https://status.github.com/messages) page it turns out they are currently having issues with background processes including publishing new pages. I will therefore likely rollback a few current changes and work out an optimised publishing solution when the services are back up and running.
+> NOTE: Due to the way a 'username.github.io' website works all static assets & html files must be on the master branch at root level. 
+> I have therefore abstracted all the code from [/JonnyPickard.github.io][5] into a seperate repository [/portfolio-website-codebase][6]. 
+> I have currently written a shell script to bundle the REACT app and copy it as well as the README/Docs over to the [/JonnyPickard.github.io][5] repository as well as committing and pushing. This pipeline is currently only done locally and is still a work in progress.
 
+The website can be viewed [here][3].  
+The component library can be viewed [here][4].
 
 ## Designs
 
@@ -102,16 +106,15 @@ See [Atomic Design][0] by Brad Frost for more information.
 ### Currently Working On
 
 Top priority:
-- Better bundle + deployment process - username.github.io websites can only be hosted from a master branch
-  - Currently assets are not being linked to correctly. 
-  - Therefor I will have to setup a few new branches. E.g. Develop & Release branches.
-  - Master should be clean apart from the static assets + docs/ README
 - Hero Section part 2 
   -  Setup App testing
   -  Sticky navbar/ solution for navbar on page change etc
   -  Viewport Size detection HOC
 
-Lower priority
+Lower priority/ Backlog
+- Better bundle + deployment process pt 2 
+  -  Work out whether a CI tool or git Tags for versioning would be a good option.
+  -  Automate bundle + deployment on push/ merge with master.
 - Find a better way to visualize tech used + Experience/ Usage Per Job.
   - Table
   - Pie/ Donut chart?
@@ -129,3 +132,7 @@ Lower priority
 [0]: http://atomicdesign.bradfrost.com/
 [1]: https://yarnpkg.com/lang/en/docs/workspaces/
 [2]: https://lernajs.io/
+[3]: https://jonnypickard.github.io
+[4]: https://jonnypickard.github.io/portfolio-website-codebase
+[5]: https://github.com/JonnyPickard/JonnyPickard.github.io
+[6]: https://github.com/JonnyPickard/portfolio-website-codebase

@@ -7,6 +7,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "deploy": "sh scripts/deploy.sh",
     "COMPONENT_LIBRARY": "",
     "start-storybook": "yarn wsrun start @jonnypickardjs/component-library",
     "build-storybook": "yarn wsrun build-storybook @jonnypickardjs/component-library",
