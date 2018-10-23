@@ -11,7 +11,7 @@ import {
 
 const props = {
   // theme: imageThemeDefault,
-  src: 'http://via.placeholder.com/200x200',
+  src: 'https://via.placeholder.com/200x200',
   alt: 'Image Alt'
 };
 

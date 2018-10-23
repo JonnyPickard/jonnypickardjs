@@ -15,7 +15,7 @@ storiesOf('Molecules/ProfilePhoto', module)
     const props = {
       theme: profilePhotoThemeDefault,
       proPhotoSize: select('Profile Photo Size', sizes, 'md'),
-      src: 'http://via.placeholder.com/200x200',
+      src: 'https://via.placeholder.com/200x200',
       alt: 'Profile Photo Alt'
     };
     return <ProfilePhoto {...props} />;

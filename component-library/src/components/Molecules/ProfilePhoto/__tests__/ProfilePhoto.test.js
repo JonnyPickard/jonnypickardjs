@@ -3,7 +3,7 @@ import ProfilePhoto from '../ProfilePhoto.js';
 import profilePhotoTheme from '../themes/ProfilePhoto.default.scss';
 
 const props = {
-  src: 'http://via.placeholder.com/200x200',
+  src: 'https://via.placeholder.com/200x200',
   alt: 'Image Alt'
 };
 

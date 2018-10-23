@@ -6,7 +6,7 @@ const props = {
   theme: projectCardTheme,
   projectTitle: 'Whatcar?',
   projectImage: {
-    src: 'http://via.placeholder.com/280x280',
+    src: 'https://via.placeholder.com/280x280',
     alt: 'Project Image'
   }
 };

@@ -56,11 +56,11 @@ const heroLinks = () => [
 const props = {
   theme: heroSectionThemeDefault,
   heroImage: {
-    src: 'http://via.placeholder.com/140x200',
+    src: 'https://via.placeholder.com/140x200',
     alt: 'Profile Image'
   },
   heroImageMobile: {
-    src: 'http://via.placeholder.com/200x200',
+    src: 'https://via.placeholder.com/200x200',
     alt: 'Profile Image'
   },
   heroTitle: 'Jonny Pickard',

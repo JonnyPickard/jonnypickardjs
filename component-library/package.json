@@ -18,7 +18,7 @@
     "test-coverage": "yarn jest -c config/jest/jest.config.js ./src --coverage",
     "open-storybook": "open -a \"Google Chrome\" http://localhost:6006",
     "storybook": "yarn start-storybook -p 6006 -s ../node_modules/modern-normalize",
-    "build-storybook": "build-storybook -c .storybook -o .out",
+    "build-storybook": "build-storybook -s ../node_modules/modern-normalize -c .storybook -o .out",
     "preinstall": "node scripts/npm/preinstall.js",
     "create-component": "create-component -c config/component-generator/cct.config.js && git add . && yarn lint-staged",
     "publish-components": "lerna publish --since",
