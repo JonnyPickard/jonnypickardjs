@@ -24,6 +24,13 @@ class WithViewport extends PureComponent<Props> {
 
   static displayName = 'WithViewport';
 
+  constructor() {
+    super();
+
+    this.getViewportSize = this.getViewportSize.bind(this);
+    this.setRef = this.setRef.bind(this);
+  }
+
   componentDidMount() {
     this.getViewportSize();
     window.addEventListener('resize', this.getViewportSize);
@@ -33,7 +40,7 @@ class WithViewport extends PureComponent<Props> {
     window.removeEventListener('resize', this.getViewportSize);
   }
 
-  getViewportSize = () => {
+  getViewportSize() {
     const width = get(this.Node.getBoundingClientRect(), ['width'], 0);
     const { desktop, tablet } = viewportSizes;
     const { getViewport } = this.props;
@@ -49,17 +56,18 @@ class WithViewport extends PureComponent<Props> {
 
       this.ViewportSize = viewportSize;
 
+      /* istanbul ignore else */
       if (getViewport) {
         getViewport(viewportSize);
       }
     }
-  };
+  }
 
-  setRef = element => {
+  setRef(element) {
     if (element) {
       this.Node = element;
     }
-  };
+  }
 
   /**
    * Render
@@ -67,6 +75,7 @@ class WithViewport extends PureComponent<Props> {
    */
   render() {
     const { theme, children } = this.props;
+
     return (
       <span className={theme.withViewport} ref={this.setRef}>
         {children}

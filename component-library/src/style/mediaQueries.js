@@ -3,7 +3,8 @@
 // Greater than
 const widths = {
   desktop: 768,
-  tablet: 476
+  tablet: 476,
+  mobile: 320
 };
 
 export default widths;

@@ -1,6 +1,7 @@
 module.exports = {
   root: true,
   env: {
+    "jest/globals": true,
     browser: true,
     commonjs: true,
     es6: true,
@@ -21,7 +22,7 @@ module.exports = {
     },
     sourceType: 'module',
   },
-  plugins: ['react', 'flowtype', 'jsx-a11y', 'import', 'prettier'],
+  plugins: ['react', 'flowtype', 'jsx-a11y', 'import', 'prettier', 'jest'],
   rules: {
     'prettier/prettier': [
       1,
