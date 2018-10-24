@@ -2,12 +2,12 @@
 
 Portfolio Website
 
+The website can be viewed [here][3].  
+The component library can be viewed [here][4].
+
 > NOTE: Due to the way a 'username.github.io' website works all static assets & html files must be on the master branch at root level. 
 > I have therefore abstracted all the code from [/JonnyPickard.github.io][5] into a seperate repository [/portfolio-website-codebase][6]. 
 > I have currently written a shell script to bundle the REACT app and copy it as well as the README/Docs over to the [/JonnyPickard.github.io][5] repository as well as committing and pushing. This pipeline is currently only done locally and is still a work in progress.
-
-The website can be viewed [here][3].  
-The component library can be viewed [here][4].
 
 ## Designs
 
