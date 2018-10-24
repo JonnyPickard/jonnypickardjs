@@ -5,20 +5,20 @@
   "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JonnyPickard/react-component-lib-boilerplate.git"
+    "url": "git+https://github.com/JonnyPickard/portfolio-website-codebase.git"
   },
   "bugs": {
-    "url": "https://github.com/JonnyPickard/react-component-lib-boilerplate/issues"
+    "url": "https://github.com/JonnyPickard/portfolio-website-codebase/issues"
   },
-  "homepage": "https://github.com/JonnyPickard/react-component-lib-boilerplate#readme",
+  "homepage": "https://github.com/JonnyPickard/portfolio-website-codebase#readme",
   "scripts": {
-    "example": "env",
+    "deploy": "yarn build-storybook && yarn gh-pages -d .out",
     "start": "yarn && run-p storybook open-storybook",
     "test": "yarn jest -c config/jest/jest.config.js ./src --watch",
     "test-coverage": "yarn jest -c config/jest/jest.config.js ./src --coverage",
     "open-storybook": "open -a \"Google Chrome\" http://localhost:6006",
-    "storybook": "yarn start-storybook -p 6006 -s ../node_modules/modern-normalize",
-    "build-storybook": "build-storybook -s ../node_modules/modern-normalize -c .storybook -o .out",
+    "storybook": "yarn start-storybook -p 6006",
+    "build-storybook": "build-storybook -c .storybook -o .out",
     "preinstall": "node scripts/npm/preinstall.js",
     "create-component": "create-component -c config/component-generator/cct.config.js && git add . && yarn lint-staged",
     "publish-components": "lerna publish --since",
@@ -110,6 +110,7 @@
   },
   "dependencies": {
     "classnames": "2.2.6",
+    "gh-pages": "^2.0.1",
     "lodash.get": "^4.4.2",
     "modern-normalize": "^0.5.0",
     "react": "16.4.2",

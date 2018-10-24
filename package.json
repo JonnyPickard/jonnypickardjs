@@ -8,6 +8,7 @@
   "private": true,
   "scripts": {
     "deploy": "sh scripts/deploy.sh",
+    "deploy-storybook": "yarn wsrun deploy @jonnypickardjs/component-library",
     "COMPONENT_LIBRARY": "",
     "start-storybook": "yarn wsrun start @jonnypickardjs/component-library",
     "build-storybook": "yarn wsrun build-storybook @jonnypickardjs/component-library",

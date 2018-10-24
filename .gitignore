@@ -2,7 +2,9 @@ etc
 .notes.md
 node_modules
 .vscode
-build 
+build
+
+component-library/.out
 
 # Logs
 logs

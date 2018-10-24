@@ -6,10 +6,15 @@
 # └── portfolio-website-codebase/
 
 PARENT_DIR=$(dirname `pwd`) 
-
 JP_DIR_PATH="$PARENT_DIR/JonnyPickard.github.io"
+GIT_BRANCH=$(git rev-parse --symbolic-full-name --abbrev-ref HEAD)
+ALLOWED_DEPLOYMENT_BRANCH="master"
 
-echo $JP_DIR_PATH
+if [ $GIT_BRANCH != $ALLOWED_DEPLOYMENT_BRANCH ]
+  then
+    echo "Warning you are attempting to deploy from the wrong branch"
+    exit 1;
+fi
 
 yarn bundle
 
