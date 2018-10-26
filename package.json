@@ -16,7 +16,9 @@
     "test-components:coverage": "yarn wsrun test-coverage @jonnypickardjs/component-library",
     "REACT_APPLICATION": "",
     "start": "yarn wsrun start @jonnypickardjs/app",
-    "bundle": "yarn && yarn wsrun bundle @jonnypickardjs/app"
+    "bundle": "yarn && yarn wsrun bundle @jonnypickardjs/app",
+    "NPM SCRIPTS": "",
+    "preinstall": "yarn-only"
   },
   "workspaces": [
     "app",
@@ -34,7 +36,9 @@
     "wsrun": "^2.2.1"
   },
   "dependencies": {
+    "chalk": "^2.4.1",
     "classnames": "2.2.6",
-    "react": "16.4.2"
+    "react": "16.4.2",
+    "yarn-only": "^1.0.4"
   }
 }

@@ -19,9 +19,7 @@
     "open-storybook": "open -a \"Google Chrome\" http://localhost:6006",
     "storybook": "yarn start-storybook -p 6006",
     "build-storybook": "build-storybook -c .storybook -o .out",
-    "preinstall": "node scripts/npm/preinstall.js",
     "create-component": "create-component -c config/component-generator/cct.config.js && git add . && yarn lint-staged",
-    "publish-components": "lerna publish --since",
     "stylelint": "stylelint --config ${PWD}/.stylelintrc.json 'src/**/*.scss'",
     "stylelint:staged": "stylelint --config ${PWD}/.stylelintrc.json"
   },
@@ -88,7 +86,6 @@
     "jest": "23.1.0",
     "jest-cli": "23.1.0",
     "jsdom": "11.9.0",
-    "lerna": "^2.11.0",
     "lint-staged": "^7.2.0",
     "lorem-ipsum": "^1.0.5",
     "node-sass": "4.9.0",
