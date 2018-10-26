@@ -6,7 +6,7 @@ The website can be viewed [here][3].
 The component library can be viewed [here][4].
 
 > NOTE: Due to the way a 'username.github.io' website works all static assets & html files must be on the master branch at root level. 
-> I have therefore abstracted all the code from [/JonnyPickard.github.io][5] into a seperate repository [/portfolio-website-codebase][6]. 
+> I have therefore abstracted all the code from [/JonnyPickard.github.io][5] into a seperate repository [/jonnypickardjs][6]. 
 > I have currently written a shell script to bundle the REACT app and copy it as well as the README/Docs over to the [/JonnyPickard.github.io][5] repository as well as committing and pushing. This pipeline is currently only done locally and is still a work in progress.
 
 ## Designs
@@ -133,6 +133,6 @@ Lower priority/ Backlog
 [1]: https://yarnpkg.com/lang/en/docs/workspaces/
 [2]: https://lernajs.io/
 [3]: https://jonnypickard.github.io
-[4]: https://jonnypickard.github.io/portfolio-website-codebase
+[4]: https://jonnypickard.github.io/jonnypickardjs
 [5]: https://github.com/JonnyPickard/JonnyPickard.github.io
-[6]: https://github.com/JonnyPickard/portfolio-website-codebase
+[6]: https://github.com/JonnyPickard/jonnypickardjs

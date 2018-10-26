@@ -5,12 +5,12 @@
   "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JonnyPickard/portfolio-website-codebase.git"
+    "url": "git+https://github.com/JonnyPickard/jonnypickardjs.git"
   },
   "bugs": {
-    "url": "https://github.com/JonnyPickard/portfolio-website-codebase/issues"
+    "url": "https://github.com/JonnyPickard/jonnypickardjs/issues"
   },
-  "homepage": "https://github.com/JonnyPickard/portfolio-website-codebase#readme",
+  "homepage": "https://github.com/JonnyPickard/jonnypickardjs#readme",
   "scripts": {
     "deploy": "yarn build-storybook && yarn gh-pages -d .out",
     "start": "yarn && run-p storybook open-storybook",

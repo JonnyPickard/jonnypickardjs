@@ -3,7 +3,7 @@
 # This script expects the following directory structure and has only been tested on mac os:
 # .
 # ├── JonnyPickard.github.io/
-# └── portfolio-website-codebase/
+# └── jonnypickardjs/
 
 PARENT_DIR=$(dirname `pwd`) 
 JP_DIR_PATH="$PARENT_DIR/JonnyPickard.github.io"
