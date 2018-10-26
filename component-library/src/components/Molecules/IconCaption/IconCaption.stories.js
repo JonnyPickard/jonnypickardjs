@@ -4,10 +4,10 @@ import { storiesOf } from '@storybook/react';
 import { withKnobs, select, text, boolean } from '@storybook/addon-knobs';
 import centered from '@storybook/addon-centered';
 
-import icons from 'assets/icons/icons.svg';
-import iconNames from 'assets/icons/iconNames.js';
-import { iconOptions } from 'shared/storybook-helpers/iconOptions.js';
-import colors from 'src/style/colors/colorSelectors';
+import icons from '@jonnypickardjs/assets/icons/icons.svg';
+import iconNames from '@jonnypickardjs/assets/icons/iconNames.js';
+import { iconOptions } from '@jonnypickardjs/clib-shared/storybook-helpers/iconOptions.js';
+import colors from '@jonnypickardjs/theme/colors/colorSelectors';
 
 import { IconCaption, iconCaptionThemeDefault } from '.';
 

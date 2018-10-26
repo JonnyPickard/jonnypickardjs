@@ -7,13 +7,13 @@ import get from 'lodash.get';
 import {
   IconCaption,
   iconCaptionThemeDefault as iconCaptionTheme
-} from 'src/components/Molecules/IconCaption';
+} from '@jonnypickardjs/iconcaption';
 import {
   Heading,
   headingThemeDefault as headingTheme
-} from 'src/components/Atoms/Heading';
+} from '@jonnypickardjs/heading';
 
-import type { colorClassSelectors } from 'shared/flow-types/colorSelectorType.js';
+import type { colorClassSelectors } from '@jonnypickardjs/clib-shared/flow-types/colorSelectorType.js';
 
 type Props = {
   /** CSS modules style object */

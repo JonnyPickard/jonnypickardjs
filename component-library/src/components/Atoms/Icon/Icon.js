@@ -3,8 +3,8 @@
 import React, { PureComponent } from 'react';
 import classNames from 'classnames';
 
-import type { colorClassSelectors } from 'shared/flow-types/colorSelectorType.js';
-import type { iconSizeSelectors } from 'shared/flow-types/iconSizeSelectorType.js';
+import type { colorClassSelectors } from '@jonnypickardjs/clib-shared/flow-types/colorSelectorType.js';
+import type { iconSizeSelectors } from '@jonnypickardjs/clib-shared/flow-types/iconSizeSelectorType.js';
 
 type Props = {
   /** CSS modules style object */

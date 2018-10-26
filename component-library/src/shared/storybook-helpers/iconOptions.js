@@ -1,5 +1,5 @@
-import icons from 'assets/icons/icons.svg';
-import iconNames from 'assets/icons/iconNames.js';
+import icons from '@jonnypickardjs/assets/icons/icons.svg';
+import iconNames from '@jonnypickardjs/assets/icons/iconNames.js';
 
 export const iconOptions = iconNames.reduce((optionsObject, iconName) => {
   optionsObject[`${icons}#${iconName}`] = iconName;
