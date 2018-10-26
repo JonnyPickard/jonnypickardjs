@@ -33,6 +33,7 @@
     "component-library/src/components/Organisms/*"
   ],
   "devDependencies": {
+    "flow-bin": "^0.84.0",
     "wsrun": "^2.2.1"
   },
   "dependencies": {
