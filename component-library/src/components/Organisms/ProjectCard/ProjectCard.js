@@ -2,7 +2,7 @@
 
 import React, { PureComponent } from 'react';
 import classNames from 'classnames';
-import { Image, imageThemeDefault as imageTheme } from '@jonnypickardjs/image';
+import { Image } from '@jonnypickardjs/image';
 import { Text, textThemeDefault as textTheme } from '@jonnypickardjs/text';
 
 type Props = {
@@ -51,7 +51,7 @@ class ProjectCard extends PureComponent<Props> {
         )}
       >
         <div className={projectCardImageSection}>
-          <Image theme={imageTheme} {...projectImage} />
+          <Image {...projectImage} />
         </div>
         <div className={projectCardTitleSection}>
           <Text theme={textTheme} content={projectTitle} />

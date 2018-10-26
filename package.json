@@ -18,7 +18,7 @@
     "start": "yarn wsrun start @jonnypickardjs/app",
     "bundle": "yarn && yarn wsrun bundle @jonnypickardjs/app",
     "NPM SCRIPTS": "",
-    "preinstall": "yarn-only"
+    "preinstall": ""
   },
   "workspaces": [
     "app",
