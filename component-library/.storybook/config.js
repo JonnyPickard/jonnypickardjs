@@ -1,4 +1,4 @@
-import 'modern-normalize/modern-normalize.css'
+import 'modern-normalize/modern-normalize.css';
 
 import { configure, addDecorator } from '@storybook/react';
 import { setOptions } from '@storybook/addon-options';
@@ -12,11 +12,11 @@ addDecorator(
 );
 
 setOptions({
-  name: "@jonnypickardjs",
+  name: '@jonnypickardjs',
   url: 'https://github.com/jonnypickard/@jonnypickardjs',
   goFullScreen: false,
   showStoriesPanel: true,
-  addonPanelInRight: false,
+  addonPanelInRight: false
   // showAddonPanel: false,
 });
 

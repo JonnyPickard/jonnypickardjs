@@ -26,7 +26,7 @@
     "content",
     "assets",
     "style",
-    "component-library/src/shared",
+    "component-library/src/clib-shared",
     "component-library/src/components/HOC/*",
     "component-library/src/components/Atoms/*",
     "component-library/src/components/Molecules/*",

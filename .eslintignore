@@ -1,2 +1,4 @@
-!.storybook/
+!.storybook
 node_modules
+./component-library/node_modules
+app/node_modules
