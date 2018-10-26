@@ -18,7 +18,7 @@ import styles from './MainPage.scss';
  * <MainPage /> component.
  */
 class MainPage extends Component<*, *> {
-  render(): Element<*> {
+  render() {
     const {
       mainPageContent: { heroSectionProps },
       navbarContent: { navbarProps }

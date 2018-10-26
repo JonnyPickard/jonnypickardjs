@@ -8,5 +8,5 @@
 [lints]
 
 [options]
-
-[strict]
+module.name_mapper='.*\.scss$' -> '<PROJECT_ROOT>/shared/flowModuleStub.js'
+module.name_mapper='.*\.svg$' -> '<PROJECT_ROOT>/shared/flowModuleStub.js'

@@ -28,7 +28,8 @@ type Props = {
   tableKey: Array<{
     color: colorClassSelectors,
     text: string
-  }>
+  }>,
+  tableKeyTitle: string
 };
 
 /**

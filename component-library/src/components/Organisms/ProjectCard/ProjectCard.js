@@ -14,6 +14,7 @@ type Props = {
     src: string,
     alt: string
   },
+  hasScaleEffect: boolean,
   projectTitle: string,
   extendStyle?: string
 };
@@ -23,6 +24,10 @@ type Props = {
  */
 class ProjectCard extends PureComponent<Props> {
   static displayName = 'ProjectCard';
+
+  static defaultProps = {
+    hasScaleEffect: false
+  };
 
   /**
    * Render

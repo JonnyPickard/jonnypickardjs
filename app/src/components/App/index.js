@@ -12,8 +12,6 @@ import {
   withViewportThemeDefault
 } from '@jonnypickardjs/withviewport';
 
-import styles from './App.scss';
-
 /**
  * <App /> component.
  */
@@ -29,9 +27,9 @@ class App extends Component<*, *> {
     }
   };
 
-  render(): Element<*> {
+  render() {
     return (
-      <div className={styles.appContainer}>
+      <div>
         <WithViewport
           theme={withViewportThemeDefault}
           getViewport={this.setViewportSize}

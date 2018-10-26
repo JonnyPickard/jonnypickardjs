@@ -10,7 +10,8 @@ type Props = {
     [css_modules_class: string]: string
   },
   href: string,
-  children: Element,
+  children: Element<*>,
+  noStyling: boolean,
   extendStyle?: string
 };
 
