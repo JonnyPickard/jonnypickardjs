@@ -1,0 +1,7 @@
+{
+  "name": "@jonnypickardjs/shared",
+  "version": "1.0.0",
+  "description": "Shared utils & config",
+  "author": "Jonny Pickard",
+  "license": "MIT"
+}

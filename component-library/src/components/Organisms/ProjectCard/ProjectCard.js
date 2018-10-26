@@ -2,7 +2,7 @@
 
 import React, { PureComponent } from 'react';
 import classNames from 'classnames';
-import { Image, imageThemeDefault as imageTheme } from '@jonnypickardjs/image';
+import { Image } from '@jonnypickardjs/image';
 import { Text, textThemeDefault as textTheme } from '@jonnypickardjs/text';
 
 type Props = {
@@ -14,6 +14,7 @@ type Props = {
     src: string,
     alt: string
   },
+  hasScaleEffect: boolean,
   projectTitle: string,
   extendStyle?: string
 };
@@ -23,6 +24,10 @@ type Props = {
  */
 class ProjectCard extends PureComponent<Props> {
   static displayName = 'ProjectCard';
+
+  static defaultProps = {
+    hasScaleEffect: false
+  };
 
   /**
    * Render
@@ -51,7 +56,7 @@ class ProjectCard extends PureComponent<Props> {
         )}
       >
         <div className={projectCardImageSection}>
-          <Image theme={imageTheme} {...projectImage} />
+          <Image {...projectImage} />
         </div>
         <div className={projectCardTitleSection}>
           <Text theme={textTheme} content={projectTitle} />

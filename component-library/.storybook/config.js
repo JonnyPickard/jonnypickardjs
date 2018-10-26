@@ -1,8 +1,8 @@
+import 'modern-normalize/modern-normalize.css';
+
 import { configure, addDecorator } from '@storybook/react';
 import { setOptions } from '@storybook/addon-options';
 import backgrounds from '@storybook/addon-backgrounds';
-
-import 'modern-normalize/modern-normalize.css'
 
 addDecorator(
   backgrounds([
@@ -12,8 +12,8 @@ addDecorator(
 );
 
 setOptions({
-  name: "Jonny's Components",
-  url: 'https://github.com/jonnypickard/jonnypickard.github.io',
+  name: '@jonnypickardjs',
+  url: 'https://github.com/jonnypickard/@jonnypickardjs',
   goFullScreen: false,
   showStoriesPanel: true,
   addonPanelInRight: false

@@ -10,13 +10,6 @@ module.exports = {
     path: path.resolve(__dirname, '../build'),
     filename: 'bundle.js'
   },
-  resolve: {
-    modules: [
-      path.resolve(__dirname, '../src/components'),
-      'node_modules',
-      '../node_modules'
-    ]
-  },
   module: {
     rules: [
       {

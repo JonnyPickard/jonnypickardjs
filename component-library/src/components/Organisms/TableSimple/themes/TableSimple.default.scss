@@ -41,6 +41,6 @@
   }
 
   &backgroundColors {
-    @import 'src/style/colors/_pickBackgroundColor.scss';
+    @import '@jonnypickardjs/theme/colors/_pickBackgroundColor.scss';
   }
 }

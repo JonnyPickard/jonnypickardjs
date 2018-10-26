@@ -16,25 +16,31 @@
     "test-components:coverage": "yarn wsrun test-coverage @jonnypickardjs/component-library",
     "REACT_APPLICATION": "",
     "start": "yarn wsrun start @jonnypickardjs/app",
-    "bundle": "yarn && yarn wsrun bundle @jonnypickardjs/app"
+    "bundle": "yarn && yarn wsrun bundle @jonnypickardjs/app",
+    "NPM SCRIPTS": "",
+    "preinstall": "yarn-only"
   },
   "workspaces": [
     "app",
     "component-library",
     "content",
-    "component-library/src/assets",
-    "component-library/src/style",
-    "component-library/src/shared",
+    "assets",
+    "style",
+    "shared",
+    "component-library/src/clib-shared",
     "component-library/src/components/HOC/*",
     "component-library/src/components/Atoms/*",
     "component-library/src/components/Molecules/*",
     "component-library/src/components/Organisms/*"
   ],
   "devDependencies": {
+    "flow-bin": "^0.84.0",
     "wsrun": "^2.2.1"
   },
   "dependencies": {
+    "chalk": "^2.4.1",
     "classnames": "2.2.6",
-    "react": "16.4.2"
+    "react": "16.4.2",
+    "yarn-only": "^1.0.4"
   }
 }

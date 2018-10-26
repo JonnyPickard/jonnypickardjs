@@ -3,7 +3,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, select } from '@storybook/addon-knobs/react';
 
-import colors from 'style/colors/colorSelectors';
+import colors from '@jonnypickardjs/theme/colors/colorSelectors';
 
 import { TableSimple, tableSimpleThemeDefault } from '.';
 

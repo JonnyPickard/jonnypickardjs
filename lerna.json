@@ -1,7 +1,10 @@
 {
   "lerna": "2.11.0",
   "packages": [
-    "src/components/**"
+    "content",
+    "assets",
+    "style",
+    "component-library/src/components/**"
   ],
   "version": "0.0.0",
   "publish": {

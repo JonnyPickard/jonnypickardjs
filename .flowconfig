@@ -1,0 +1,12 @@
+[ignore]
+.*/__tests__/.*
+
+[include]
+
+[libs]
+
+[lints]
+
+[options]
+module.name_mapper='.*\.scss$' -> '<PROJECT_ROOT>/shared/flowModuleStub.js'
+module.name_mapper='.*\.svg$' -> '<PROJECT_ROOT>/shared/flowModuleStub.js'

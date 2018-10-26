@@ -1,5 +1,6 @@
 etc
 .notes.md
+.workInProgressLog.md
 node_modules
 .vscode
 build

@@ -3,9 +3,6 @@
   "description": "Presentational",
   "version": "0.0.0",
   "main": "./index.js",
-  "files": [
-    "./__themes__/Image.default.scss"
-  ],
   "dependencies": {
     "@jonnypickardjs/theme": "^1.0.0"
   },

@@ -3,7 +3,7 @@
 import React, { PureComponent } from 'react';
 import classNames from 'classnames';
 
-import { Image, imageThemeDefault as imageTheme } from '@jonnypickardjs/image';
+import { Image } from '@jonnypickardjs/image';
 import { Text, textThemeDefault as textTheme } from '@jonnypickardjs/text';
 import {
   Heading,
@@ -104,7 +104,7 @@ class HeroSection extends PureComponent<Props> {
               alt={heroImage.alt}
             />
             {/* Standard Image - Desktop */}
-            <Image theme={imageTheme} src={heroImage.src} alt={heroImage.alt} />
+            <Image src={heroImage.src} alt={heroImage.alt} />
           </div>
           {/* Right Main Section - Profile Info */}
           <div>

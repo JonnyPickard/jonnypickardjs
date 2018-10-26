@@ -6,7 +6,7 @@ module.exports = {
     'src/**/*.js',
     '!**/*.stories.js',
     '!**/*index.js',
-    '!src/shared/storybook-helpers/*.js'
+    '!src/clib-shared/storybook-helpers/*.js'
   ],
   coverageThreshold: {
     global: {

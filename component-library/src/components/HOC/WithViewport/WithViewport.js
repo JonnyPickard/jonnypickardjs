@@ -1,5 +1,7 @@
 // @flow
 
+import type { Node } from 'react';
+
 import React, { PureComponent } from 'react';
 import get from 'lodash.get';
 
@@ -10,6 +12,7 @@ type Props = {
   theme: {
     [css_modules_class: string]: string
   },
+  children?: Node,
   /** Callback function will return mobile | tablet | desktop */
   getViewport?: Function,
   extendStyle?: string
@@ -19,8 +22,10 @@ type Props = {
  * WithViewport Component
  */
 class WithViewport extends PureComponent<Props> {
-  Node: Element;
+  Node: HTMLSpanElement;
   ViewportSize: 'mobile' | 'tablet' | 'desktop';
+  getViewportSize: Function;
+  setRef: Function;
 
   static displayName = 'WithViewport';
 
@@ -63,7 +68,7 @@ class WithViewport extends PureComponent<Props> {
     }
   }
 
-  setRef(element) {
+  setRef(element: HTMLSpanElement) {
     if (element) {
       this.Node = element;
     }
