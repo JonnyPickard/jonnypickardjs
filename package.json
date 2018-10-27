@@ -1,22 +1,22 @@
 {
-  "name": "jonnypickard.github.io",
+  "name": "jonnypickardjs",
   "version": "1.0.0",
   "description": "Portfolio website",
-  "repository": "git@github.com:JonnyPickard/JonnyPickard.github.io.git",
+  "repository": "git@github.com:JonnyPickard/jonnypickardjs.git",
   "author": "Jonny Pickard <jonathandpickard@gmail.com>",
   "license": "MIT",
   "private": true,
   "scripts": {
-    "deploy": "sh scripts/deploy.sh",
-    "deploy-storybook": "yarn wsrun deploy @jonnypickardjs/component-library",
+    "REACT_APPLICATION": "",
+    "deploy": "node scripts/deploy.js",
+    "start": "yarn wsrun start @jonnypickardjs/app",
+    "bundle": "yarn && yarn wsrun bundle @jonnypickardjs/app",
     "COMPONENT_LIBRARY": "",
+    "deploy-storybook": "yarn wsrun deploy @jonnypickardjs/component-library",
     "start-storybook": "yarn wsrun start @jonnypickardjs/component-library",
     "build-storybook": "yarn wsrun build-storybook @jonnypickardjs/component-library",
     "test-components": "yarn wsrun test @jonnypickardjs/component-library",
     "test-components:coverage": "yarn wsrun test-coverage @jonnypickardjs/component-library",
-    "REACT_APPLICATION": "",
-    "start": "yarn wsrun start @jonnypickardjs/app",
-    "bundle": "yarn && yarn wsrun bundle @jonnypickardjs/app",
     "NPM SCRIPTS": "",
     "preinstall": "yarn-only"
   },
@@ -35,6 +35,7 @@
   ],
   "devDependencies": {
     "flow-bin": "^0.84.0",
+    "gh-pages": "^2.0.1",
     "wsrun": "^2.2.1"
   },
   "dependencies": {
