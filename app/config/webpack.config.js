@@ -1,4 +1,5 @@
 const HtmlWebPackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const path = require('path');
 
 const { NODE_ENV = 'development' } = process.env;
@@ -63,8 +64,18 @@ module.exports = {
       inject: true,
       template: path.resolve(__dirname, '../public/index.html'),
       favicon: path.resolve(__dirname, '../public/favicon.ico')
-    })
+    }),
+    // Copy docs + README over to bundle location
+    new CopyWebpackPlugin([
+      {
+        from: path.resolve(__dirname, '../../docs'),
+        to: 'docs',
+        toType: 'dir'
+      },
+      path.resolve(__dirname, '../../README.md')
+    ])
   ],
+
   devServer: {
     historyApiFallback: true
   }

@@ -1,8 +1,8 @@
 {
-  "name": "jonnypickard.github.io",
+  "name": "jonnypickardjs",
   "version": "1.0.0",
   "description": "Portfolio website",
-  "repository": "git@github.com:JonnyPickard/JonnyPickard.github.io.git",
+  "repository": "git@github.com:JonnyPickard/jonnypickardjs.git",
   "author": "Jonny Pickard <jonathandpickard@gmail.com>",
   "license": "MIT",
   "private": true,
