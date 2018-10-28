@@ -1,0 +1,13 @@
+@import '@jonnypickardjs/theme/variables.scss';
+
+.projectCardListSection {
+  &Divider {
+    @media #{$width-tablet} {
+      display: none;
+    }
+  }
+  
+  &NonMobileDivider {
+    display: none;
+  }
+}

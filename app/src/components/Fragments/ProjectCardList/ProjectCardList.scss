@@ -2,13 +2,25 @@
 
 .projectCardList {
   display: flex;
+  flex-direction: column;
 
+  @media #{$width-tablet} {
+    flex-direction: row;
+  }
+  
+  // Cards are only responsible for spacing between cards
   &Card {
     display: block;
-    margin: 0 20px;
-
+    margin-bottom: 20px;
+    &:last-of-type, {
+      margin-bottom: 0;
+    }
     @media #{$width-tablet} {
       max-width: 300px;
+      margin: 0 40px 0 0;
+      &:last-of-type, {
+        margin-right: 0;
+      }
     }
   }
 }

@@ -8,7 +8,7 @@ import {
 } from '@jonnypickardjs/herosection';
 import { Navbar, navbarThemeDefault } from '@jonnypickardjs/navbar';
 
-import ProjectCardList from '../../Fragments/ProjectCardList/ProjectCardList';
+import ProjectCardListSection from '../../Fragments/ProjectCardListSection/ProjectCardListSection';
 
 import content from '@jonnypickardjs/content';
 
@@ -32,7 +32,7 @@ class MainPage extends Component<*, *> {
           {...heroSectionProps}
           extendStyle={styles.mainPageHeroSection}
         />
-        <ProjectCardList />
+        <ProjectCardListSection projectCardListSectionTitle="Work" />
       </div>
     );
   }

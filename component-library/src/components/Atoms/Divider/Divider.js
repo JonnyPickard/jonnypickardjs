@@ -13,6 +13,7 @@ type Props = {
   dividerColor: colorClassSelectors,
   dividerSize: 'xs' | 'sm' | 'md',
   axis: 'vertical' | 'horizontal',
+  withShadow: boolean,
   extendStyle?: string
 };
 
@@ -25,7 +26,8 @@ class Divider extends PureComponent<Props> {
   static defaultProps = {
     dividerColor: 'grayscaleColor5',
     axis: 'horizontal',
-    dividerSize: 'xs'
+    dividerSize: 'xs',
+    withShadow: false
   };
 
   getClassSelectorForSize = (): string => {
@@ -51,7 +53,7 @@ class Divider extends PureComponent<Props> {
    * @return {Element<*>} JSX
    */
   render() {
-    const { theme, extendStyle, axis } = this.props;
+    const { theme, extendStyle, axis, withShadow } = this.props;
 
     const DividerTag = axis === 'horizontal' ? 'hr' : 'div';
 
@@ -62,6 +64,7 @@ class Divider extends PureComponent<Props> {
           this.getClassSelectorForSize(),
           this.getClassSelectorForAxis(),
           this.getClassSelectorForColor(),
+          withShadow && theme.dividerwithShadow,
           extendStyle
         )}
       />
