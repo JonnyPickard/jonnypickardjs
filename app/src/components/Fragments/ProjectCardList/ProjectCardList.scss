@@ -1,0 +1,14 @@
+@import '@jonnypickardjs/theme/variables.scss';
+
+.projectCardList {
+  display: flex;
+
+  &Card {
+    display: block;
+    margin: 0 20px;
+
+    @media #{$width-tablet} {
+      max-width: 300px;
+    }
+  }
+}

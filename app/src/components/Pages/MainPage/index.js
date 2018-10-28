@@ -2,13 +2,13 @@
 
 import React, { Component } from 'react';
 
-import { Link } from 'react-router-dom';
-
 import {
   HeroSection,
   heroSectionThemeDefault
 } from '@jonnypickardjs/herosection';
 import { Navbar, navbarThemeDefault } from '@jonnypickardjs/navbar';
+
+import ProjectCardList from '../../Fragments/ProjectCardList/ProjectCardList';
 
 import content from '@jonnypickardjs/content';
 
@@ -27,8 +27,12 @@ class MainPage extends Component<*, *> {
     return (
       <div className={styles.mainPage}>
         <Navbar theme={navbarThemeDefault} {...navbarProps} />
-        <HeroSection theme={heroSectionThemeDefault} {...heroSectionProps} />
-        <Link to="/projects/testProject1">Test Project</Link>
+        <HeroSection
+          theme={heroSectionThemeDefault}
+          {...heroSectionProps}
+          extendStyle={styles.mainPageHeroSection}
+        />
+        <ProjectCardList />
       </div>
     );
   }

@@ -1,5 +1,7 @@
-import socialIcons from './socialIcons';
-import profilePicture from './profilePicture';
+import socialIcons from '../socialIcons';
+import profilePicture from '../profilePicture';
+
+import workProjectsContent from './workProjectsContent';
 
 const { profilePictureDesktop, profilePictureMobile } = profilePicture;
 
@@ -14,6 +16,9 @@ const mainPageContent = {
 Passionate and successful London based software engineer, with a reputation for creative problem-solving. \
 Key work priorities include achieving work of a high standard that is highly maintainable and scalable. \
 Consistently seeking challenging new roles that encourage both personal and professional growth.`
+  },
+  workProjectsSection: {
+    workProjectsContent
   }
 };
 

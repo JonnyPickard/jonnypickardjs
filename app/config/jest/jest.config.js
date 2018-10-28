@@ -2,12 +2,7 @@ module.exports = {
   rootDir: '../../',
   verbose: true,
   testURL: 'http://localhost/',
-  collectCoverageFrom: [
-    'src/**/*.js',
-    '!**/*.stories.js',
-    '!**/*index.js',
-    '!src/clib-shared/storybook-helpers/*.js'
-  ],
+  collectCoverageFrom: ['src/**/*.js'],
   coverageThreshold: {
     global: {
       branches: 100,
@@ -26,7 +21,8 @@ module.exports = {
     '^.+\\.js$': 'babel-jest'
   },
   moduleNameMapper: {
-    '^.+\\.(scss|svg)$': 'identity-obj-proxy'
+    '^.+\\.scss$': 'identity-obj-proxy',
+    '^.+\\.(svg|png)$': '<rootDir>/config/jest/fileMock.js'
   },
   moduleDirectories: ['node_modules', '<rootDir>', '<rootDir>/src'],
   transformIgnorePatterns: ['[/\\\\]node_modules[/\\\\].+\\.js$']
