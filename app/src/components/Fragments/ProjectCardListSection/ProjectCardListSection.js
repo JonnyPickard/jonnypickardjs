@@ -19,6 +19,7 @@ type Props = {
 class ProjectCardListSection extends PureComponent<Props> {
   render() {
     const { projectCardListSectionTitle } = this.props;
+
     return (
       <div className={styles.projectCardListSection}>
         <Heading
@@ -26,6 +27,7 @@ class ProjectCardListSection extends PureComponent<Props> {
           headingType="h2"
           theme={headingThemeDefault}
           content={projectCardListSectionTitle}
+          extendStyle={styles.projectCardListSectionHeading}
         />
         {/* Mobile only Divider */}
         <Divider
@@ -34,7 +36,7 @@ class ProjectCardListSection extends PureComponent<Props> {
           dividerColor="grayscaleColor2"
           withShadow
         />
-        <ProjectCardList />
+        <ProjectCardList extendStyle={styles.projectCardListSectionCardList} />
         {/* > Tablet only Divider */}
         <Divider
           theme={dividerThemeDefault}
