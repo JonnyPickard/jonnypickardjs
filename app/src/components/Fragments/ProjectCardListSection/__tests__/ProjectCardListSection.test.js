@@ -5,7 +5,8 @@ import ReactRouterEnzymeContext from 'react-router-enzyme-context';
 
 describe('<ProjectCardListSection />', () => {
   const props = {
-    theme: ProjectCardListSectionTheme
+    theme: ProjectCardListSectionTheme,
+    projectCardListSectionTitle: 'Test Title'
   };
 
   it('renders succesfully', () => {
