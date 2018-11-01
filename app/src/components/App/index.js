@@ -3,6 +3,9 @@
 import React, { Component } from 'react';
 
 import { Route, Switch, withRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
+
+import { setViewport } from './App.actions';
 
 import MainPage from '../Pages/MainPage';
 import ProjectDetailPage from '../Pages/ProjectDetailPage';
@@ -16,14 +19,16 @@ import {
  * <App /> component.
  */
 class App extends Component<*, *> {
-  state: Object = {};
+  static mapStateToProps(state: Object) {
+    return {
+      viewportSize: state.app.viewportSize
+    };
+  }
 
-  setViewportSize = viewport => {
-    const { viewportSize } = this.state;
-
-    // Only triggers a re render if the vp size is different
-    if (viewportSize !== viewport) {
-      this.setState({ viewportSize: viewport });
+  setViewport = viewport => {
+    // Only reset state if viewport size has changed
+    if (this.props.viewportSize !== viewport) {
+      this.props.setViewport(viewport);
     }
   };
 
@@ -32,7 +37,7 @@ class App extends Component<*, *> {
       <div>
         <WithViewport
           theme={withViewportThemeDefault}
-          getViewport={this.setViewportSize}
+          getViewport={this.setViewport}
         >
           <Switch>
             <Route exact path="/" component={MainPage} />,
@@ -44,4 +49,4 @@ class App extends Component<*, *> {
   }
 }
 
-export default withRouter(App);
+export default withRouter(connect(App.mapStateToProps, { setViewport })(App));
