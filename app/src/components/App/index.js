@@ -25,7 +25,7 @@ class App extends Component<*, *> {
     };
   }
 
-  setViewport = viewport => {
+  setViewport = (viewport: string) => {
     // Only reset state if viewport size has changed
     if (this.props.viewportSize !== viewport) {
       this.props.setViewport(viewport);
