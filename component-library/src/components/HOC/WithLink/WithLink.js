@@ -9,6 +9,8 @@ type Props = {
   theme: {
     [css_modules_class: string]: string
   },
+  /** If passed in a React-Router Link Component use it */
+  ReactRouterLink?: Function,
   href: string,
   children: Element<*>,
   noStyling: boolean,
@@ -26,10 +28,20 @@ class WithLink extends PureComponent<Props> {
    * @return {Element<*>} JSX
    */
   render() {
-    const { theme, extendStyle, href, children, noStyling } = this.props;
+    const {
+      theme,
+      extendStyle,
+      href,
+      children,
+      noStyling,
+      ReactRouterLink
+    } = this.props;
+
+    const HTMLTag = ReactRouterLink || 'a';
 
     return (
-      <a
+      <HTMLTag
+        to={href}
         href={href}
         className={classNames(
           theme.withLink,
@@ -38,7 +50,7 @@ class WithLink extends PureComponent<Props> {
         )}
       >
         {children}
-      </a>
+      </HTMLTag>
     );
   }
 }

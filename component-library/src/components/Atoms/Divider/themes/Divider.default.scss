@@ -34,4 +34,7 @@
   &colors {
     @import '@jonnypickardjs/theme/colors/_pickColor.scss';
   }
+  &withShadow {
+    box-shadow: 0 2px 7px 0 $box-shadow-light;
+  }
 }

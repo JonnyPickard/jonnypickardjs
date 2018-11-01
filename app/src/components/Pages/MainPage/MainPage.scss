@@ -14,7 +14,7 @@
   }
 
   // HeroSection
-  > div:last-of-type {
+  &HeroSection {
     margin: 80px 20px 30px;
     @media #{$width-tablet} {
       margin: 0;
