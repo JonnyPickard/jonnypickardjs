@@ -21,6 +21,9 @@
 
   &TitleSection {
     font-size: $font-size-h2;
+    @media #{$width-tablet} {
+      font-size: $font-size-h3;
+    }
     display: flex;
     margin: 15px;
     align-items: center;
