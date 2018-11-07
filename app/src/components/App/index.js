@@ -9,7 +9,7 @@ import styles from './App.scss';
 
 import { setViewport } from './App.actions';
 
-import MainPage from '../Pages/MainPage';
+import MainPage from '../Pages/MainPage/MainPage.js';
 import ProjectDetailPage from '../Pages/ProjectDetailPage';
 
 import { Navbar, navbarThemeDefault } from '@jonnypickardjs/navbar';
