@@ -1,6 +1,4 @@
-// import ctmCardImage from '@jonnypickardjs/assets/images/projectImages/';
-
-const ctmCardImage = 'TODO';
+import ctmCardImage from '@jonnypickardjs/assets/images/projectImages/compare-the-market.png';
 
 const ctmProject = {
   projectUrlTitle: 'comparethemarket',

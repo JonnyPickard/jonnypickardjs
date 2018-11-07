@@ -1,9 +1,7 @@
-// import tDataImage from '@jonnypickardjs/assets/images/projectImages/';
-
-const tDataImage = 'TODO';
+import tDataImage from '@jonnypickardjs/assets/images/projectImages/transparency-data.png';
 
 const ctmProject = {
-  projectUrlTitle: 'transparencyData',
+  projectUrlTitle: 'transparencydata',
   projectTitle: 'Transparency Data Ltd.',
   projectImage: {
     src: tDataImage,
