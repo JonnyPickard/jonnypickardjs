@@ -85,7 +85,6 @@ class MainPage extends Component<*, *> {
           />
         </div>
         <ProjectCardListSection projectCardListSectionTitle="Work" />
-        <ProjectCardListSection projectCardListSectionTitle="Work" />
       </div>
     );
   }
