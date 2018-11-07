@@ -106,21 +106,7 @@ See [Atomic Design][0] by Brad Frost for more information.
 
 ### Currently Working On
 
-Top priority:
-- Hero Section part 2 
-  -  Setup App testing
-  -  Sticky navbar/ solution for navbar on page change etc
-  -  Viewport Size detection HOC
-
-Lower priority/ Backlog
-- Better bundle + deployment process pt 2 
-  -  Work out whether a CI tool or git Tags for versioning would be a good option.
-  -  Automate bundle + deployment on push/ merge with master.
-- Find a better way to visualize tech used + Experience/ Usage Per Job.
-  - Table
-  - Pie/ Donut chart?
-- Find a better way to visualize main capabilities. 
-  - Graphs? 
+- [x] Project Detail page  
 
 ### Future Ideas
 
