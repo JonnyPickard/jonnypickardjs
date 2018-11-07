@@ -49,7 +49,7 @@ class App extends Component<*, *> {
     } = this.props;
 
     // If on mainPage/ Home Page don't show navbar
-    const showNavbar = viewportSize === 'mobile';
+    const showNavbar = viewportSize === 'mobile' || pathname !== '/';
 
     return (
       <div>
