@@ -1,23 +1,35 @@
 @import '@jonnypickardjs/theme/variables.scss';
 
 .mainPage {
-  // Navbar only display on mobile
-  > div:first-of-type {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    overflow: hidden;
-    background: white;
-    @media #{$width-tablet} {
-      display: none;
-    }
-  }
-
   // HeroSection
   &HeroSection {
     margin: 80px 20px 30px;
     @media #{$width-tablet} {
       margin: 0;
     }
+    
+    &Fixed { 
+      @media #{$width-tablet} {
+        opacity: 1;
+        animation-name: fadeInOpacity;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        animation-duration: 0.2s;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        overflow: hidden;
+        background: white;
+      }
+    }
   }
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }

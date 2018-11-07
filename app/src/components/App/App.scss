@@ -1,0 +1,12 @@
+@import '@jonnypickardjs/theme/variables.scss';
+
+.app {
+  // Navbar only display on mobile
+  &NavBar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    overflow: hidden;
+    background: white;
+  }
+}

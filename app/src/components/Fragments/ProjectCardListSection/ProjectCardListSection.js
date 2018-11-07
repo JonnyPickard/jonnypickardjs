@@ -17,13 +17,18 @@ type Props = {
  * <ProjectCardListSection /> component.
  */
 class ProjectCardListSection extends PureComponent<Props> {
+  static mapStateToProps = (state: Object) => {
+    return {
+      viewportSize: state.app.viewportSize
+    };
+  };
+
   render() {
     const { projectCardListSectionTitle } = this.props;
 
     return (
       <div className={styles.projectCardListSection}>
         <Heading
-          // TODO: Add redux and base this on viewport size
           headingType="h2"
           theme={headingThemeDefault}
           content={projectCardListSectionTitle}

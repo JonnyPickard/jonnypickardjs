@@ -2,7 +2,7 @@
 
 import React, { Component } from 'react';
 
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 
 import './ProjectDetailPage.scss';
 
@@ -20,4 +20,4 @@ class ProjectDetailPage extends Component<*, *> {
   }
 }
 
-export default ProjectDetailPage;
+export default withRouter(ProjectDetailPage);
