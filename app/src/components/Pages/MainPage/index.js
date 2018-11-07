@@ -6,7 +6,6 @@ import {
   HeroSection,
   heroSectionThemeDefault
 } from '@jonnypickardjs/herosection';
-import { Navbar, navbarThemeDefault } from '@jonnypickardjs/navbar';
 
 import ProjectCardListSection from '../../Fragments/ProjectCardListSection/ProjectCardListSection';
 
@@ -18,15 +17,19 @@ import styles from './MainPage.scss';
  * <MainPage /> component.
  */
 class MainPage extends Component<*, *> {
+  static mapStateToProps = (state: Object) => {
+    return {
+      viewportSize: state.app.viewportSize
+    };
+  };
+
   render() {
     const {
-      mainPageContent: { heroSectionProps },
-      navbarContent: { navbarProps }
+      mainPageContent: { heroSectionProps }
     } = content;
 
     return (
       <div className={styles.mainPage}>
-        <Navbar theme={navbarThemeDefault} {...navbarProps} />
         <HeroSection
           theme={heroSectionThemeDefault}
           {...heroSectionProps}

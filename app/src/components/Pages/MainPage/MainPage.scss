@@ -1,18 +1,6 @@
 @import '@jonnypickardjs/theme/variables.scss';
 
 .mainPage {
-  // Navbar only display on mobile
-  > div:first-of-type {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    overflow: hidden;
-    background: white;
-    @media #{$width-tablet} {
-      display: none;
-    }
-  }
-
   // HeroSection
   &HeroSection {
     margin: 80px 20px 30px;

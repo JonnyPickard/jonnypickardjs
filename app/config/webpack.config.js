@@ -9,6 +9,7 @@ module.exports = {
   entry: './src/client',
   output: {
     path: path.resolve(__dirname, '../build'),
+    publicPath: '/',
     filename: 'bundle.js'
   },
   module: {
@@ -77,6 +78,7 @@ module.exports = {
   ],
 
   devServer: {
+    publicPath: '/',
     historyApiFallback: true
   }
 };
