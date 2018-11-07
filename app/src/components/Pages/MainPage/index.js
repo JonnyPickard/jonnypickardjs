@@ -43,6 +43,10 @@ class MainPage extends Component<*, *> {
     }
   }
 
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.setFixedHero());
+  }
+
   // Set a fixed hero on scroll past hero height
   setFixedHero = () =>
     debounce(() => {
